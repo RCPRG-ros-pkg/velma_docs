@@ -2,7 +2,7 @@
 permalink:           /:year/:month/:day/:title/
 
 # Setup
-title:               Documentation for control system of WUT Velma Robot
+title:               Documentation of control system of WUT Velma Robot
 tagline:             WUT Velma Robot
 url:                 ""
 baseurl:             "/velma_docs"
