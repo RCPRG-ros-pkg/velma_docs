@@ -10,41 +10,64 @@ brief: Specification of behaviors of subsystems of core agent.
 ## Behaviors
 
 Each subsystem realizes one or multiple behaviors.
-The behavior switching is governed by a Finite State Machine (FSM), so that one behavior can be executed in one or multiple states.
+The behavior switching is governed by a Finite State Machine (FSM), so that one behavior is executed in one state of the FSM.
 
-## Virtual effector *velma_core_ve_body*
-FSM of velma_core_ve_body subsystem:
+## *velma_core_ve_body*
+FSM of *velma_core_ve_body* subsystem:
 
 ![]({{site.baseurl}}/public/img/velma_core_ve_body_fsm.png)
 
-The conditions are:
+All states, except *idle* last exactly one iteration, so their terminal conditions are:
 
-* $$\scriptsize \sigma_{\texttt{safe},\texttt{safe_st}} = \texttt{recvStatus} \wedge \neg \texttt{allHwOk}$$
-* $$\scriptsize \sigma_{\texttt{safe},\texttt{safe_st_ok}} = \texttt{recvStatus} \wedge \texttt{allHwOk}$$
-* $$\scriptsize \sigma_{\texttt{safe},\texttt{idle}} = \neg \texttt{recvStatus}$$
-* $$\scriptsize \tau_{\texttt{safe}} = \texttt{TRUE}$$
-* $$\scriptsize \epsilon_{\texttt{safe}} = \texttt{FALSE}$$
-* $$\scriptsize \sigma_{\texttt{safe_st},\texttt{safe}} = \texttt{TRUE} $$
-* $$\scriptsize \tau_{\texttt{safe_st}} = \texttt{TRUE}$$
-* $$\scriptsize \epsilon_{\texttt{safe_st}} = \texttt{FALSE}$$
-* $$\scriptsize \sigma_{\texttt{safe_st_ok},\texttt{safe}} = \neg \texttt{recvCommand} \vee \neg \texttt{allCmdOk} \vee \neg \texttt{cmdExitSafeState} \vee \neg \texttt{safeItPassed500} $$
-* $$\scriptsize \sigma_{\texttt{safe_st_ok},\texttt{transp}} = \texttt{recvCommand} \wedge \texttt{allCmdOk} \wedge \texttt{cmdExitSafeState} \wedge \texttt{safeItPassed500} $$
-* $$\scriptsize \tau_{\texttt{safe_st_ok}} = \texttt{TRUE}$$
-* $$\scriptsize \epsilon_{\texttt{safe_st_ok}} = \texttt{FALSE}$$
-* $$\scriptsize \sigma_{\texttt{transp},\texttt{safe_st}} = \texttt{recvStatus} \wedge \neg \texttt{allHwOk}$$
-* $$\scriptsize \sigma_{\texttt{transp},\texttt{transp_st}} = \texttt{recvStatus} \wedge \texttt{allHwOk} $$
-* $$\scriptsize \sigma_{\texttt{transp},\texttt{idle}} = \neg \texttt{recvStatus}$$
-* $$\scriptsize \tau_{\texttt{transp}} = \texttt{TRUE}$$
-* $$\scriptsize \epsilon_{\texttt{transp}} = \texttt{FALSE}$$
-* $$\scriptsize \sigma_{\texttt{transp_st},\texttt{transp}} = \texttt{recvCommand} \wedge \texttt{allCmdOk}$$
-* $$\scriptsize \sigma_{\texttt{transp_st},\texttt{safe}} = \neg \texttt{recvCommand} \vee \neg \texttt{allCmdOk}$$
-* $$\scriptsize \tau_{\texttt{transp_st}} = \texttt{TRUE}$$
-* $$\scriptsize \epsilon_{\texttt{transp_st}} = \texttt{FALSE}$$
-* $$\scriptsize \sigma_{\texttt{idle},\texttt{safe_st}} = \texttt{recvStatus}$$
-* $$\scriptsize \tau_{\texttt{idle}} = \texttt{recvStatus}$$
-* $$\scriptsize \epsilon_{\texttt{idle}} = \texttt{FALSE}$$
+$$\scriptsize \tau_{\texttt{safe}} = \tau_{\texttt{safe_st}} = \tau_{\texttt{safe_st_ok}} = \tau_{\texttt{transp}} = \tau_{\texttt{transp_st}} = \texttt{TRUE}$$
 
-With predicates:
+The only state that can last for more than one iteration is *idle*, and its terminal condition is
+$$\scriptsize \tau_{\texttt{idle}} = \texttt{recvStatus}$$, so it is switched upon successful reception
+of status data from real effectors. Then, the FSM is switched to *safe_st*:
+
+$$\scriptsize \sigma_{\texttt{idle},\texttt{safe_st}} = \texttt{recvStatus}$$
+
+
+Only one transition is possible from state *safe_st*, i.e. $$\scriptsize \sigma_{\texttt{safe_st},\texttt{safe}} = \texttt{TRUE} $$.
+
+
+The transition conditions for state *safe* are:
+
+$$\scriptsize \sigma_{\texttt{safe},\texttt{safe_st}} = \texttt{recvStatus} \wedge \neg \texttt{allHwOk}$$
+
+$$\scriptsize \sigma_{\texttt{safe},\texttt{safe_st_ok}} = \texttt{recvStatus} \wedge \texttt{allHwOk}$$
+
+$$\scriptsize \sigma_{\texttt{safe},\texttt{idle}} = \neg \texttt{recvStatus}$$
+
+
+The transition conditions for state *safe_st_ok* are defined as:
+
+$$\scriptsize \sigma_{\texttt{safe_st_ok},\texttt{safe}} = \neg \texttt{recvCommand} \vee \neg \texttt{allCmdOk} \vee \neg \texttt{cmdExitSafeState} \vee \neg \texttt{safeItPassed500} $$
+
+$$\scriptsize \sigma_{\texttt{safe_st_ok},\texttt{transp}} = \texttt{recvCommand} \wedge \texttt{allCmdOk} \wedge \texttt{cmdExitSafeState} \wedge \texttt{safeItPassed500} $$
+
+
+For state *transp* one transition is choosen using conditions:
+
+$$\scriptsize \sigma_{\texttt{transp},\texttt{safe_st}} = \texttt{recvStatus} \wedge \neg \texttt{allHwOk}$$
+
+$$\scriptsize \sigma_{\texttt{transp},\texttt{transp_st}} = \texttt{recvStatus} \wedge \texttt{allHwOk} $$
+
+$$\scriptsize \sigma_{\texttt{transp},\texttt{idle}} = \neg \texttt{recvStatus}$$
+
+
+The transtion conditions for state *transp* are:
+
+$$\scriptsize \sigma_{\texttt{transp_st},\texttt{transp}} = \texttt{recvCommand} \wedge \texttt{allCmdOk}$$
+
+$$\scriptsize \sigma_{\texttt{transp_st},\texttt{safe}} = \neg \texttt{recvCommand} \vee \neg \texttt{allCmdOk}$$
+
+
+As error handling in this subsystem is not supported, error conditions for all states are defined as:
+
+$$\scriptsize \epsilon_{\texttt{safe}} = \epsilon_{\texttt{safe_st}} = \epsilon_{\texttt{transp}} = \epsilon_{\texttt{transp_st}} = \epsilon_{\texttt{idle}} = \epsilon_{\texttt{safe_st_ok}} = \texttt{FALSE}$$
+
+With predicates defined as:
 
 * $$\scriptsize \texttt{recvStatus}$$ - new status data was received from real effectors,
 * $$\scriptsize \texttt{recvCommand}$$ - new command data was received from velma_core_cs,
