@@ -29,3 +29,11 @@ github:
 # Gems
 gems:
   - jekyll-gist
+#  - kramdown
+#  - rouge
+
+#markdown: kramdown
+#kramdown:
+#  input: GFM
+#  syntax_highlighter: rouge
+
