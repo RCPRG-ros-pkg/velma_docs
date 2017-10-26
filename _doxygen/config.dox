@@ -32,7 +32,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "RCPRG Python interfaces"
+PROJECT_NAME           = "WUT Velma Python interfaces"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
@@ -140,7 +140,7 @@ INLINE_INHERITED_MEMB  = NO
 # shortest path that makes the file name unique will be used
 # The default value is: YES.
 
-FULL_PATH_NAMES        = NO
+FULL_PATH_NAMES        = YES
 
 # The STRIP_FROM_PATH tag can be used to strip a user-defined part of the path.
 # Stripping is only done if one of the specified strings matches the left-hand
@@ -152,7 +152,7 @@ FULL_PATH_NAMES        = NO
 # will be relative from the directory where doxygen is started.
 # This tag requires that the tag FULL_PATH_NAMES is set to YES.
 
-STRIP_FROM_PATH        =
+STRIP_FROM_PATH        = ws_velma/src/ ws_fabric/src/
 
 # The STRIP_FROM_INC_PATH tag can be used to strip a user-defined part of the
 # path mentioned in the documentation of a class, which tells the reader which
@@ -416,7 +416,7 @@ LOOKUP_CACHE_SIZE      = 0
 # normally produced when WARNINGS is set to YES.
 # The default value is: NO.
 
-EXTRACT_ALL            = NO
+EXTRACT_ALL            = YES
 
 # If the EXTRACT_PRIVATE tag is set to YES, all private members of a class will
 # be included in the documentation.
@@ -442,7 +442,7 @@ EXTRACT_STATIC         = NO
 # for Java sources.
 # The default value is: YES.
 
-EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_CLASSES  = NO
 
 # This flag is only useful for Objective-C code. If set to YES, local methods,
 # which are defined in the implementation section but not in the interface are
@@ -771,7 +771,8 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = ws_velma/src/velma_system/velma_common ws_velma/src/planner ws_velma/src/rcprg_ros_utils
+INPUT                  = ws_velma/src/velma_system ws_velma/src/planner ws_velma/src/rcprg_ros_utils ws_fabric/src/agent_orocos/subsystem_common \
+ ws_velma/src/velma_system/velma_task_cs_ros_interface README.md group_defs.dox ws_velma/src/rcprg_gazebo_utils ws_velma/src/common_core_cs_components
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -796,7 +797,7 @@ INPUT_ENCODING         = UTF-8
 # *.m, *.markdown, *.md, *.mm, *.dox, *.py, *.pyw, *.f90, *.f, *.for, *.tcl,
 # *.vhd, *.vhdl, *.ucf, *.qsf, *.as and *.js.
 
-FILE_PATTERNS          = *.py
+FILE_PATTERNS          = *.py *.md *.launch
 
 # The RECURSIVE tag can be used to specify whether or not subdirectories should
 # be searched for input files as well.
@@ -827,7 +828,7 @@ EXCLUDE_SYMLINKS       = NO
 # Note that the wildcards are matched against the file with absolute path, so to
 # exclude all test directories for example use the pattern */test/*
 
-EXCLUDE_PATTERNS       =
+EXCLUDE_PATTERNS       = */setup.py
 
 # The EXCLUDE_SYMBOLS tag can be used to specify one or more symbol names
 # (namespaces, classes, functions, etc.) that should be excluded from the
@@ -2203,7 +2204,7 @@ CLASS_GRAPH            = YES
 # The default value is: YES.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-COLLABORATION_GRAPH    = YES
+COLLABORATION_GRAPH    = NO
 
 # If the GROUP_GRAPHS tag is set to YES then doxygen will generate a graph for
 # groups, showing the direct groups dependencies.
