@@ -7,6 +7,5 @@ task: 3
 brief: Documentation of Python interface of task agent
 ---
 
-## TODO
+[Documentation]({{site.baseurl}}/public/html/index.html).
 
-TODO
