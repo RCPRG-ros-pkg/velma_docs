@@ -14,7 +14,5 @@ var searchData=
   ['waitforjoint',['waitForJoint',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a1cf90af072b37b4288f4870c5a5ab369',1,'velma_common::velma_interface::VelmaInterface']]],
   ['waitforjointstate',['waitForJointState',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#aa180efc058abe008ab353177521e18d7',1,'velma_common::velma_interface::VelmaInterface']]],
   ['waitformotor',['waitForMotor',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#ae8d3b6221dfe969dff4ccb31a56b7fc5',1,'velma_common::velma_interface::VelmaInterface']]],
-  ['waitfort',['waitForT',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a2a03862f7bdb1ca3a86dadf597151cd4',1,'velma_common::velma_interface::VelmaInterface']]],
-  ['wrists_5fcimp_5ftest_2epy',['wrists_cimp_test.py',['../wrists__cimp__test_8py.html',1,'']]],
-  ['wrists_5ftest_2epy',['wrists_test.py',['../wrists__test_8py.html',1,'']]]
+  ['waitfort',['waitForT',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a2a03862f7bdb1ca3a86dadf597151cd4',1,'velma_common::velma_interface::VelmaInterface']]]
 ];

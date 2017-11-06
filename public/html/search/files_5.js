@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jimp_5fself_5fcol_2epy',['jimp_self_col.py',['../jimp__self__col_8py.html',1,'']]]
+  ['marker_5fpublisher_2epy',['marker_publisher.py',['../marker__publisher_8py.html',1,'']]]
 ];

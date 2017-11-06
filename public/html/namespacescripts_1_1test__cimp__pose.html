@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">scripts.test_cimp_pose Namespace Reference</div>  </div>
@@ -97,14 +98,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Integration test.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6985ca6e6a8f193d87e53f0be6191d0a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a6985ca6e6a8f193d87e53f0be6191d0a">planAndExecute</a> (q_dest)</td></tr>
+<tr class="separator:a6985ca6e6a8f193d87e53f0be6191d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a101d4d22533290f6c3f4098303d1a8f8"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a101d4d22533290f6c3f4098303d1a8f8">q_map_starting</a></td></tr>
 <tr class="separator:a101d4d22533290f6c3f4098303d1a8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fcc5aa75063962bd406f3e85922f806"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a7fcc5aa75063962bd406f3e85922f806">q_map_1</a></td></tr>
 <tr class="separator:a7fcc5aa75063962bd406f3e85922f806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8851f4fadf4e14a9d70ea02937917a98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a8851f4fadf4e14a9d70ea02937917a98">anonymous</a></td></tr>
-<tr class="separator:a8851f4fadf4e14a9d70ea02937917a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6274dd516dd49d27256b8d9eed19e5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#ad6274dd516dd49d27256b8d9eed19e5a">velma</a> = <a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html">VelmaInterface</a>()</td></tr>
 <tr class="separator:ad6274dd516dd49d27256b8d9eed19e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1079a83f4add9da4928f0519b3d1596e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a1079a83f4add9da4928f0519b3d1596e">timeout_s</a></td></tr>
@@ -123,40 +127,49 @@ Variables</h2></td></tr>
 <tr class="separator:a925329799d5ecdd20cc221f68cb879cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fd77389d0f5d534fa0c27fc2b7885d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a5fd77389d0f5d534fa0c27fc2b7885d7">js_init</a> = velma.getLastJointState()</td></tr>
 <tr class="separator:a5fd77389d0f5d534fa0c27fc2b7885d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1358eb1cbf7e8e286296679b37ec399"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#aa1358eb1cbf7e8e286296679b37ec399">goal_constraint_1</a> = qMapToConstraints(<a class="el" href="namespacescripts_1_1test__cimp__pose.html#a7fcc5aa75063962bd406f3e85922f806">q_map_1</a>, 0.01, group=velma.getJointGroup(&quot;impedance_joints&quot;))</td></tr>
-<tr class="separator:aa1358eb1cbf7e8e286296679b37ec399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8d23f7d621d4a6f0520a8eea8014d14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#aa8d23f7d621d4a6f0520a8eea8014d14">traj</a> = p.plan(<a class="el" href="namespacescripts_1_1test__cimp__pose.html#a9ff6732164fc88a84d4aa3120c31cd24">js</a>[1], [<a class="el" href="namespacescripts_1_1test__cimp__pose.html#aa1358eb1cbf7e8e286296679b37ec399">goal_constraint_1</a>], &quot;impedance_joints&quot;, max_velocity_scaling_factor=0.15, planner_id=&quot;RRTConnect&quot;)</td></tr>
-<tr class="separator:aa8d23f7d621d4a6f0520a8eea8014d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19c31f2cff995ad9068983b3b56c501e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a19c31f2cff995ad9068983b3b56c501e">T_B_Trd</a> = velma.getTf(&quot;B&quot;, &quot;Wr&quot;)</td></tr>
+<tr class="memitem:a070d2a7fceba7abfdece5f20047bcfdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a070d2a7fceba7abfdece5f20047bcfdd">T_B_Wr</a> = velma.getTf(&quot;B&quot;, &quot;Wr&quot;)</td></tr>
+<tr class="separator:a070d2a7fceba7abfdece5f20047bcfdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8207fadfefd6c766f2389103c70fecfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a8207fadfefd6c766f2389103c70fecfc">T_B_Wl</a> = velma.getTf(&quot;B&quot;, &quot;Wl&quot;)</td></tr>
+<tr class="separator:a8207fadfefd6c766f2389103c70fecfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c31f2cff995ad9068983b3b56c501e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a19c31f2cff995ad9068983b3b56c501e">T_B_Trd</a> = PyKDL.Frame(PyKDL.Rotation.Quaternion( 0.0 , 0.0 , 0.0 , 1.0 ), PyKDL.Vector( 0.7 , -0.3 , 1.3 ))</td></tr>
 <tr class="separator:a19c31f2cff995ad9068983b3b56c501e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fd914cba58abd1f26fff41a0913f230"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a9fd914cba58abd1f26fff41a0913f230">T_B_Trd_init</a> = copy.copy(<a class="el" href="namespacescripts_1_1test__cimp__pose.html#a19c31f2cff995ad9068983b3b56c501e">T_B_Trd</a>)</td></tr>
-<tr class="separator:a9fd914cba58abd1f26fff41a0913f230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad46f2b05392c6a32b0518c9f4f9c9a1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#ad46f2b05392c6a32b0518c9f4f9c9a1e">T_B_Tld_init</a> = copy.copy(velma.getTf(&quot;B&quot;, &quot;Wl&quot;))</td></tr>
-<tr class="separator:ad46f2b05392c6a32b0518c9f4f9c9a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d41f6bc394185ed94636558532775d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a5d41f6bc394185ed94636558532775d8">goal_constraint_2</a> = qMapToConstraints(<a class="el" href="namespacescripts_1_1test__cimp__pose.html#a101d4d22533290f6c3f4098303d1a8f8">q_map_starting</a>, 0.01, group=velma.getJointGroup(&quot;impedance_joints&quot;))</td></tr>
-<tr class="separator:a5d41f6bc394185ed94636558532775d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21374e875cec7e0753c2a90d1a1d578e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a21374e875cec7e0753c2a90d1a1d578e">T_B_Tld</a> = PyKDL.Frame(PyKDL.Rotation.RotZ(180.0/180.0*math.pi), PyKDL.Vector(0.4, -0.1, 1.2))</td></tr>
+<tr class="memitem:a172eff6c9eda6ffa79f380be0d161755"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a172eff6c9eda6ffa79f380be0d161755">T_B_T_diff</a> = PyKDL.diff(<a class="el" href="namespacescripts_1_1test__cimp__pose.html#a19c31f2cff995ad9068983b3b56c501e">T_B_Trd</a>, velma.getTf(&quot;B&quot;, &quot;Tr&quot;), 1.0)</td></tr>
+<tr class="separator:a172eff6c9eda6ffa79f380be0d161755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9b051ddba0e3e691b74dcfc9af6b0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#aaf9b051ddba0e3e691b74dcfc9af6b0e">T_B_Tr</a> = velma.getTf(&quot;B&quot;, &quot;Tr&quot;)</td></tr>
+<tr class="separator:aaf9b051ddba0e3e691b74dcfc9af6b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05506fc43ef6d448d3a5e10b9a6761cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a05506fc43ef6d448d3a5e10b9a6761cc">T_B_Tr_old</a> = <a class="el" href="namespacescripts_1_1test__cimp__pose.html#aaf9b051ddba0e3e691b74dcfc9af6b0e">T_B_Tr</a></td></tr>
+<tr class="separator:a05506fc43ef6d448d3a5e10b9a6761cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c97dbcdcff148e129a3d2eee8693beb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a7c97dbcdcff148e129a3d2eee8693beb">synchronized_time</a> = rospy.Time.now()+rospy.Duration(0.5)</td></tr>
+<tr class="separator:a7c97dbcdcff148e129a3d2eee8693beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30e8ba4df93b95df4b83a30e5259f2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#aa30e8ba4df93b95df4b83a30e5259f2e">T_B_Tl</a> = velma.getTf(&quot;B&quot;, &quot;Tl&quot;)</td></tr>
+<tr class="separator:aa30e8ba4df93b95df4b83a30e5259f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21374e875cec7e0753c2a90d1a1d578e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a21374e875cec7e0753c2a90d1a1d578e">T_B_Tld</a> = <a class="el" href="namespacescripts_1_1test__cimp__pose.html#aa30e8ba4df93b95df4b83a30e5259f2e">T_B_Tl</a>*PyKDL.Frame(PyKDL.Rotation.RotZ(-30.0/180.0*math.pi))</td></tr>
 <tr class="separator:a21374e875cec7e0753c2a90d1a1d578e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88878c89cdeab5a8ce62820b3d4892b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a88878c89cdeab5a8ce62820b3d4892b9">path_tol</a></td></tr>
-<tr class="separator:a88878c89cdeab5a8ce62820b3d4892b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2155c41dfab2b00acb9cfe4a97c6a8d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescripts_1_1test__cimp__pose.html#a2155c41dfab2b00acb9cfe4a97c6a8d2">stamp</a></td></tr>
+<tr class="separator:a2155c41dfab2b00acb9cfe4a97c6a8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Integration test. </p>
-</div><h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a8851f4fadf4e14a9d70ea02937917a98"></a>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a6985ca6e6a8f193d87e53f0be6191d0a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">scripts.test_cimp_pose.anonymous</td>
+          <td class="memname">def scripts.test_cimp_pose.planAndExecute </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>q_dest</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00035">35</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00094">94</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a7c6fb74494c59d64c615b6d0fc84224a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +180,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00047">47</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00081">81</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -181,35 +194,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00064">64</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa1358eb1cbf7e8e286296679b37ec399"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">scripts.test_cimp_pose.goal_constraint_1 = qMapToConstraints(<a class="el" href="namespacescripts_1_1test__cimp__pose.html#a7fcc5aa75063962bd406f3e85922f806">q_map_1</a>, 0.01, group=velma.getJointGroup(&quot;impedance_joints&quot;))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00103">103</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5d41f6bc394185ed94636558532775d8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">scripts.test_cimp_pose.goal_constraint_2 = qMapToConstraints(<a class="el" href="namespacescripts_1_1test__cimp__pose.html#a101d4d22533290f6c3f4098303d1a8f8">q_map_starting</a>, 0.01, group=velma.getJointGroup(&quot;impedance_joints&quot;))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00141">141</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00124">124</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -223,7 +208,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00078">78</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00137">137</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -237,7 +222,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00098">98</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00144">144</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -251,21 +236,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00053">53</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a88878c89cdeab5a8ce62820b3d4892b9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">scripts.test_cimp_pose.path_tol</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00199">199</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00087">87</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -279,7 +250,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacescripts_1_1test__cimp__pose.html">    1</a></span>&#160;= {<span class="stringliteral">&#39;torso_0_joint&#39;</span>:0.0,</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;        <span class="stringliteral">&#39;right_arm_0_joint&#39;</span>:-0.3,   <span class="stringliteral">&#39;left_arm_0_joint&#39;</span>:0.3,</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;        <span class="stringliteral">&#39;right_arm_1_joint&#39;</span>:-1.57,  <span class="stringliteral">&#39;left_arm_1_joint&#39;</span>:1.57,</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        <span class="stringliteral">&#39;right_arm_2_joint&#39;</span>:1.57,   <span class="stringliteral">&#39;left_arm_2_joint&#39;</span>:-1.57,</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        <span class="stringliteral">&#39;right_arm_3_joint&#39;</span>:1.57,   <span class="stringliteral">&#39;left_arm_3_joint&#39;</span>:-1.7,</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        <span class="stringliteral">&#39;right_arm_4_joint&#39;</span>:0.0,    <span class="stringliteral">&#39;left_arm_4_joint&#39;</span>:0.0,</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="stringliteral">&#39;right_arm_5_joint&#39;</span>:-1.57,  <span class="stringliteral">&#39;left_arm_5_joint&#39;</span>:1.57,</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="stringliteral">&#39;right_arm_6_joint&#39;</span>:0.0,    <span class="stringliteral">&#39;left_arm_6_joint&#39;</span>:0.0 }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00026">26</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00057">57</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -293,7 +264,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacescripts_1_1test__cimp__pose.html">    1</a></span>&#160;= {<span class="stringliteral">&#39;torso_0_joint&#39;</span>:0,</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;        <span class="stringliteral">&#39;right_arm_0_joint&#39;</span>:-0.3,   <span class="stringliteral">&#39;left_arm_0_joint&#39;</span>:0.3,</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;        <span class="stringliteral">&#39;right_arm_1_joint&#39;</span>:-1.8,   <span class="stringliteral">&#39;left_arm_1_joint&#39;</span>:1.8,</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        <span class="stringliteral">&#39;right_arm_2_joint&#39;</span>:1.25,   <span class="stringliteral">&#39;left_arm_2_joint&#39;</span>:-1.25,</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        <span class="stringliteral">&#39;right_arm_3_joint&#39;</span>:0.85,   <span class="stringliteral">&#39;left_arm_3_joint&#39;</span>:-0.85,</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        <span class="stringliteral">&#39;right_arm_4_joint&#39;</span>:0,      <span class="stringliteral">&#39;left_arm_4_joint&#39;</span>:0,</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="stringliteral">&#39;right_arm_5_joint&#39;</span>:-0.5,   <span class="stringliteral">&#39;left_arm_5_joint&#39;</span>:0.5,</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="stringliteral">&#39;right_arm_6_joint&#39;</span>:0,      <span class="stringliteral">&#39;left_arm_6_joint&#39;</span>:0 }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00017">17</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00048">48</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2155c41dfab2b00acb9cfe4a97c6a8d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">scripts.test_cimp_pose.stamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00288">288</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -307,7 +292,49 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00063">63</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00123">123</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c97dbcdcff148e129a3d2eee8693beb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">scripts.test_cimp_pose.synchronized_time = rospy.Time.now()+rospy.Duration(0.5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00283">283</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a172eff6c9eda6ffa79f380be0d161755"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">scripts.test_cimp_pose.T_B_T_diff = PyKDL.diff(<a class="el" href="namespacescripts_1_1test__cimp__pose.html#a19c31f2cff995ad9068983b3b56c501e">T_B_Trd</a>, velma.getTf(&quot;B&quot;, &quot;Tr&quot;), 1.0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00181">181</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa30e8ba4df93b95df4b83a30e5259f2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">scripts.test_cimp_pose.T_B_Tl = velma.getTf(&quot;B&quot;, &quot;Tl&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00286">286</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -316,26 +343,40 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">scripts.test_cimp_pose.T_B_Tld = PyKDL.Frame(PyKDL.Rotation.RotZ(180.0/180.0*math.pi), PyKDL.Vector(0.4, -0.1, 1.2))</td>
+          <td class="memname">scripts.test_cimp_pose.T_B_Tld = <a class="el" href="namespacescripts_1_1test__cimp__pose.html#aa30e8ba4df93b95df4b83a30e5259f2e">T_B_Tl</a>*PyKDL.Frame(PyKDL.Rotation.RotZ(-30.0/180.0*math.pi))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00198">198</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00287">287</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad46f2b05392c6a32b0518c9f4f9c9a1e"></a>
+<a class="anchor" id="aaf9b051ddba0e3e691b74dcfc9af6b0e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">scripts.test_cimp_pose.T_B_Tld_init = copy.copy(velma.getTf(&quot;B&quot;, &quot;Wl&quot;))</td>
+          <td class="memname">scripts.test_cimp_pose.T_B_Tr = velma.getTf(&quot;B&quot;, &quot;Tr&quot;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00128">128</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00188">188</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05506fc43ef6d448d3a5e10b9a6761cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">scripts.test_cimp_pose.T_B_Tr_old = <a class="el" href="namespacescripts_1_1test__cimp__pose.html#aaf9b051ddba0e3e691b74dcfc9af6b0e">T_B_Tr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00232">232</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -344,26 +385,40 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">scripts.test_cimp_pose.T_B_Trd = velma.getTf(&quot;B&quot;, &quot;Wr&quot;)</td>
+          <td class="memname">scripts.test_cimp_pose.T_B_Trd = PyKDL.Frame(PyKDL.Rotation.Quaternion( 0.0 , 0.0 , 0.0 , 1.0 ), PyKDL.Vector( 0.7 , -0.3 , 1.3 ))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00126">126</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00174">174</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9fd914cba58abd1f26fff41a0913f230"></a>
+<a class="anchor" id="a8207fadfefd6c766f2389103c70fecfc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">scripts.test_cimp_pose.T_B_Trd_init = copy.copy(<a class="el" href="namespacescripts_1_1test__cimp__pose.html#a19c31f2cff995ad9068983b3b56c501e">T_B_Trd</a>)</td>
+          <td class="memname">scripts.test_cimp_pose.T_B_Wl = velma.getTf(&quot;B&quot;, &quot;Wl&quot;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00127">127</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00163">163</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a070d2a7fceba7abfdece5f20047bcfdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">scripts.test_cimp_pose.T_B_Wr = velma.getTf(&quot;B&quot;, &quot;Wr&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00162">162</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -377,7 +432,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00042">42</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00076">76</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -391,21 +446,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00079">79</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa8d23f7d621d4a6f0520a8eea8014d14"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">scripts.test_cimp_pose.traj = p.plan(<a class="el" href="namespacescripts_1_1test__cimp__pose.html#a9ff6732164fc88a84d4aa3120c31cd24">js</a>[1], [<a class="el" href="namespacescripts_1_1test__cimp__pose.html#aa1358eb1cbf7e8e286296679b37ec399">goal_constraint_1</a>], &quot;impedance_joints&quot;, max_velocity_scaling_factor=0.15, planner_id=&quot;RRTConnect&quot;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00108">108</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00138">138</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
@@ -419,7 +460,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00040">40</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
+<p>Definition at line <a class="el" href="test__cimp__pose_8py_source.html#l00074">74</a> of file <a class="el" href="test__cimp__pose_8py_source.html">test_cimp_pose.py</a>.</p>
 
 </div>
 </div>
