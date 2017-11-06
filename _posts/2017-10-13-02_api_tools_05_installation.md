@@ -7,7 +7,7 @@ task: 2
 brief: Installation
 ---
 
-## TODO
+## Installation
 
-TODO
+This part is not ready yet.
 

@@ -7,5 +7,5 @@ task: 1
 brief: Documentation of Python interface of task agent
 ---
 
-[Documentation]({{site.baseurl}}/public/html/index.html).
+Please refer to [Doxygen documentation]({{site.baseurl}}/public/html/index.html).
 
