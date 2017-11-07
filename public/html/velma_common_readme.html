@@ -83,17 +83,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><p>This package provides python interface to WUT Velma Robot, python scripts and ROS launch files:</p><ul>
 <li><a class="el" href="ar__track__kinect__50_8launch.html">ar_track_kinect_50.launch</a> - runs ROS node for AR visual marker recognition and localization; arguments:<ul>
-<li>marker_size</li>
-<li>max_new_marker_error</li>
-<li>max_track_error</li>
-<li>cam_image_topic</li>
-<li>cam_info_topic</li>
-<li>output_frame</li>
+<li><em>marker_size</em></li>
+<li><em>max_new_marker_error</em></li>
+<li><em>max_track_error</em></li>
+<li><em>cam_image_topic</em></li>
+<li><em>cam_info_topic</em></li>
+<li><em>output_frame</em></li>
 </ul>
 </li>
 <li><a class="el" href="kinect__hw_8launch.html">kinect_hw.launch</a> - runs HW kinect ROS nodes</li>
 <li><a class="el" href="octomap__offline__server_8launch.html">octomap_offline_server.launch</a> - runs offline octomap server with predefined (saved) map file; arguments:<ul>
-<li>octomap_file - file path for preloaded octomap file. The map sile can be saved using <code>rosrun octomap_server octomap_saver</code></li>
+<li><em>octomap_file</em> - file path for preloaded octomap file. The map sile can be saved using <code>rosrun octomap_server octomap_saver</code></li>
 </ul>
 </li>
 <li><p class="startli"><a class="el" href="octomap__server_8launch.html">octomap_server.launch</a> - runs the following nodes:</p><ul>
@@ -102,17 +102,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>octomap filter that adds to the occupancy map unexplored space information</li>
 </ul>
 <p class="startli">arguments:</p><ul>
-<li>use_hw_kinect - <code>true</code> if real HW kinect is used, <code>false</code> for simulated kinect</li>
-<li>octomap_file - file path for preloaded octomap file</li>
+<li><em>use_hw_kinect</em> - <code>true</code> if real HW kinect is used, <code>false</code> for simulated kinect</li>
+<li><em>octomap_file</em> - file path for preloaded octomap file</li>
 </ul>
 </li>
 <li><a class="el" href="show__collisions_8launch.html">show_collisions.launch</a> - runs script that vizualises collision objects and collisions between them</li>
 <li><a class="el" href="show__kinect__frustum_8launch.html">show_kinect_frustum.launch</a> - runs script that visualizes frustum of kinect mounted on head of Velma</li>
 <li><a class="el" href="velma__system_8launch.html">velma_system.launch</a> - runs all core agent and task agent subsystems<ul>
-<li>GAZEBO_MODEL_PATH - please refer to Gazebo documentation</li>
-<li>GAZEBO_RESOURCE_PATH - please refer to Gazebo documentation</li>
-<li>use_kinect - <code>true</code> or <code>false</code>: enable or disable kinect simulation</li>
-<li>world_name - world file name with respect to GAZEBO_RESOURCE_PATH</li>
+<li><em>GAZEBO_MODEL_PATH</em> - please refer to Gazebo documentation</li>
+<li><em>GAZEBO_RESOURCE_PATH</em> - please refer to Gazebo documentation</li>
+<li><em>use_kinect</em> - <code>true</code> or <code>false</code>: enable or disable kinect simulation</li>
+<li><em>world_name</em> - world file name with respect to GAZEBO_RESOURCE_PATH</li>
+<li><em>profile</em> - physics profile as defined in world file</li>
 </ul>
 </li>
 <li><a class="el" href="int__markers__cimp_8py.html" title="Provides interactive 6D pose marker that ca be used to move end-effectors. ">int_markers_cimp.py</a> - provides interactive 6D pose marker that ca be used to move end-effectors. </li>
