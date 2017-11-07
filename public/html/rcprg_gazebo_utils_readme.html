@@ -84,13 +84,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><p>This package provides utilities for Gazebo simulator.</p>
 <p>Launch files:</p><ul>
 <li><a class="el" href="gazebo__client_8launch.html">gazebo_client.launch</a> - runs Gazebo client; please note that you should provide the same paths for resources as for the server using ROS launch arguments:<ul>
-<li><em>GAZEBO_MODEL_PATH</em></li>
-<li><em>GAZEBO_RESOURCE_PATH</em></li>
+<li><em>GAZEBO_MODEL_PATH</em> - - please refer to Gazebo documentation</li>
+<li><em>GAZEBO_RESOURCE_PATH</em> - - please refer to Gazebo documentation</li>
 </ul>
 </li>
 <li><a class="el" href="gazebo__world__editor_8launch.html">gazebo_world_editor.launch</a> - runs Gazebo server and client; can be used as world editor; use the following arguments to set resource paths:<ul>
-<li><em>GAZEBO_MODEL_PATH</em></li>
-<li><em>GAZEBO_RESOURCE_PATH</em></li>
+<li><em>GAZEBO_MODEL_PATH</em> - - please refer to Gazebo documentation</li>
+<li><em>GAZEBO_RESOURCE_PATH</em> - - please refer to Gazebo documentation</li>
+<li><em>paused</em></li>
+<li><em>gui</em></li>
+<li><em>verbose</em></li>
+<li><em>debug</em></li>
+<li><em>world_name</em> - world file name with respect to GAZEBO_RESOURCE_PATH</li>
 </ul>
 </li>
 <li><a class="el" href="spawn__object_8launch.html">spawn_object.launch</a> - runs script that spawns object in Gazebo; arguments:<ul>
@@ -98,7 +103,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><em>x</em> - position x coordinate</li>
 <li><em>y</em> - position y coordinate</li>
 <li><em>z</em> - position z coordinate</li>
-<li><em>GAZEBO_MODEL_PATH</em> </li>
+<li><em>GAZEBO_MODEL_PATH</em> - please refer to Gazebo documentation</li>
+</ul>
+</li>
+<li><a class="el" href="gazebo__publish__ros__tf__object_8launch.html">gazebo_publish_ros_tf_object.launch</a> - runs ROS node that publisher pose of a specified object to tf ROS topic; arguments:<ul>
+<li><em>link_name</em> - name of link in Gazebo simulator, usually <code>model_name::link_name</code></li>
+<li><em>frame_id</em> - frame name to be published </li>
 </ul>
 </li>
 </ul>

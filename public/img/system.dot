@@ -11,6 +11,7 @@ digraph graphname {
         labelloc=b
         node [style=filled shape=box style=rounded];
         velma_core_cs -> velma_core_ve_body -> velma_sim_gazebo;
+        velma_sim_gazebo -> velma_core_vr_kinect;
         velma_sim_gazebo -> velma_core_ve_body -> velma_core_cs;
         {rank=sink velma_sim_gazebo;}
         label = "velma_core agent";

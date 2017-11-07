@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>WUT Velma Python interfaces: scripts.test_init Namespace Reference</title>
+<title>WUT Velma Python interfaces: velma_sim_gazebo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,9 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="namespaces.html"><span>Packages</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -61,12 +61,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="namespaces.html"><span>Packages</span></a></li>
-      <li><a href="namespacemembers.html"><span>Package&#160;Functions</span></a></li>
-    </ul>
-  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,21 +75,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacescripts.html">scripts</a></li><li class="navelem"><a class="el" href="namespacescripts_1_1test__init.html">test_init</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">scripts.test_init Namespace Reference</div>  </div>
+<div class="title">velma_sim_gazebo </div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Integration test.  
-<a href="#details">More...</a></p>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Integration test. </p>
+<div class="textblock"><p>This package defines and implements a group of simulated real effectors of Velma core agent. It is Gazebo plugin and Orocos components for WUT Velma Robot simulation in Gazebo.</p>
+<p>It provides ROS launch file:</p><ul>
+<li><a class="el" href="velma__gazebo__re_8launch.html">velma_gazebo_re.launch</a> - runs the subsystem and simulator; it uses <a class="el" href="unpause__on__init_8py.html" title="Script used to unpause the simulation after initialization procedure is complete. ...">unpause_on_init.py</a> script to unpause the simulation after initialization procedure is complete; arguments:<ul>
+<li>gui - run also Gazebo client</li>
+<li>headless - run Gazebo without graphic card support (all rendering is disabled, even for visual sensors)</li>
+<li>verbose</li>
+<li>debug - if <code>true</code>, the deployer is executed in gdb.</li>
+<li>world_name - world file name with respect to GAZEBO_RESOURCE_PATH</li>
+<li>load_robot_description - if <code>true</code>, the launch file loads robot description from urdf and runs robot_state_publisher</li>
+<li>GAZEBO_MODEL_PATH - please refer to Gazebo documentation</li>
+<li>GAZEBO_RESOURCE_PATH - please refer to Gazebo documentation</li>
+<li>use_kinect - <code>true</code> or <code>false</code>: enable or disable kinect simulation</li>
+<li>ORO_LOGLEVEL - orocos log level, the higher number the more verbose output </li>
+</ul>
+</li>
+</ul>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,25 @@
+digraph graphname {
+    task  [style=filled shape=box style=rounded label = "task_executor"];
+    agent_a [style=filled shape=box style=rounded label = "planner"];
+    agent_b [style=filled shape=box style=rounded label = "octomap"];
+    agent_c [style=filled shape=box style=rounded label = "visual_recognition"];
+    velma_task [style=filled shape=box style=rounded label = "velma_task"];
+    {rank=sink velma_core [style=filled shape=box style=rounded label = "velma_core"];}
+
+    velma_task -> velma_core;
+    velma_core -> velma_task;
+    velma_core -> agent_b;
+    velma_core -> agent_c;
+
+    task -> agent_a;
+
+    velma_task -> task;
+    task -> velma_task;
+
+    agent_a -> task;
+    agent_b -> task;
+    agent_c -> task;
+
+    margin=0;   # for whole graph
+}
+

@@ -81,9 +81,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">velma_sim </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This package defines and implements real-time simulated real effector (torso and neck) of Velma core agent.</p>
+<div class="textblock"><p>This package defines and implements real-time simulated real effector (torso and neck) of Velma core agent. It does <em>NOT</em> use Gazebo.</p>
 <p>It provides ROS launch files:</p><ul>
-<li><a class="el" href="velma__sim__re_8launch.html">velma_sim_re.launch</a> - runs the subsystem </li>
+<li><a class="el" href="velma__sim__re_8launch.html">velma_sim_re.launch</a> - runs the subsystem; arguments:<ul>
+<li>LOG_LEVEL - Orocos log level, for details type <code>deployer --help</code></li>
+<li>debug - if <code>true</code>, the deployer is executed in gdb.</li>
+<li>cset - if <code>true</code>, the deployer is executed on one CPU core, this works only on RT-linux </li>
+</ul>
+</li>
 </ul>
 </div></div><!-- contents -->
 <!-- start footer part -->

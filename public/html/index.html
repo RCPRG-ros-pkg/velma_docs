@@ -90,45 +90,119 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>as tutorials on the interfaces.</li>
 </ul>
 <p>Additionally, <a class="el" href="group__utilities.html">Utilities</a> provide useful scripts and ROS launch files.</p>
-<p>Brief descriptions of some catkin packages are in Related pages tab. Modules tab groups python executable scripts into <a class="el" href="group__integration__tests.html">Intergation tests</a> and <a class="el" href="group__utilities.html">Utilities</a>.</p>
+<p>Brief descriptions of some catkin packages are in <a href="pages.html">Related pages</a> tab. It contains sources for ROS launch files in each package. Please refer to launch files sources to get familiar with setting parameters and running the system and various useful tools.</p>
+<p>The tab <a href="modules.html">Modules</a> groups python executable scripts into <a class="el" href="group__integration__tests.html">Intergation tests</a> and <a class="el" href="group__utilities.html">Utilities</a>.</p>
 <h1>Running the system</h1>
 <pre class="fragment">roslaunch velma_sim_gazebo velma_gazebo_re.launch
 </pre><h1>Installation</h1>
-<p>Please follow the steps described in section <a href="https://github.com/RCPRG-ros-pkg/RCPRG_rosinstall/wiki/Set-up:-Velma-(latest-version)">Set up: Velma (latest version)</a>. The simulator is provided in both versions: <code>latest</code> and <code>latest_hw</code>, but if You don't want to run real hardware, install the simulation-only version.</p>
+<p>Please follow the steps described in section <a href="https://github.com/RCPRG-ros-pkg/RCPRG_rosinstall/wiki/Set-up:-Velma-(latest-version)">Set up: Velma (latest version)</a>. The simulator is provided in both versions: <code>latest</code> and <code>latest_hw</code>, but if You don't want to run real hardware, install the simulation-only version (<code>latest</code>).</p>
 <h1>Running the simulator</h1>
 <p>The setup.bash script of the workspace must be sourced in each terminal. Usually is is <em>setup.bash</em> script in devel ot install space of top level workspace.</p>
-<p>Run:</p><ol type="1">
-<li>ROS master: <pre class="fragment"> roscore
+<h2>Running the simulated system:</h2>
+<ol type="1">
+<li>Initialize ROS: <pre class="fragment"> roscore
 </pre></li>
-<li>Simulated system, two ways are possible:<ul>
-<li>each subsystem individually (on single machine):<ul>
-<li>RE of simulated Velma robot: <pre class="fragment">  roslaunch velma_sim_gazebo velma_gazebo_re.launch
-</pre></li>
-<li>VE of simulated Velma robot: <pre class="fragment">  roslaunch velma_core_ve_body velma_gazebo_ve_body.launch
-</pre></li>
-<li>CS of core agent: <pre class="fragment">  roslaunch velma_core_cs velma_core_cs.launch
-</pre></li>
-<li>CS of task agent: <pre class="fragment">  roslaunch velma_task_cs_ros_interface velma_task_cs_ros_interface.launch
-</pre></li>
+<li>Run subsystems of <em>velma_core</em> and <em>velma_task</em> agents - two ways are possible:<ul>
+<li>each subsystem individually (on a single machine):<ul>
+<li><p class="startli">RE of simulated Velma robot: </p><pre class="fragment">  roslaunch velma_sim_gazebo velma_gazebo_re.launch
+</pre><p class="startli">Please refer to documentation of <a class="el" href="velma_sim_gazebo_readme.html">velma_sim_gazebo</a> for details about launch file arguments.</p>
+</li>
+<li><p class="startli">VE of simulated Velma robot: </p><pre class="fragment">  roslaunch velma_core_ve_body velma_gazebo_ve_body.launch
+</pre><p class="startli">Please refer to documentation of <a class="el" href="velma_core_ve_body_readme.html">velma_core_ve_body</a> for details about launch file arguments.</p>
+</li>
+<li><p class="startli">CS of core agent: </p><pre class="fragment">  roslaunch velma_core_cs velma_core_cs.launch
+</pre><p class="startli">Please refer to documentation of <a class="el" href="velma_core_cs_readme.html">velma_core_cs</a> for details about launch file arguments.</p>
+</li>
+<li><p class="startli">CS of task agent: </p><pre class="fragment">  roslaunch velma_task_cs_ros_interface velma_task_cs_ros_interface.launch
+</pre><p class="startli">Please refer to documentation of <a class="el" href="velma_task_cs_ros_interface_readme.html">velma_task_cs_ros_interface</a> for details about launch file arguments.</p>
+</li>
 </ul>
 </li>
-<li>or all subsystems together: <pre class="fragment">      roslaunch velma_common velma_system.launch
-</pre></li>
+<li><p class="startli">or all subsystems together: </p><pre class="fragment">      roslaunch velma_common velma_system.launch
+</pre><p class="startli">Please refer to <a class="el" href="velma_common_readme.html">velma_common</a> for details about launch file arguments.</p>
+</li>
 </ul>
 </li>
 </ol>
-<p>You can also run:</p><ul>
+<h2>Running the real HW system:</h2>
+<ol type="1">
+<li>Turn on main power supply. It is located in P109 near the main door.</li>
+<li>Turn on lwr-controller PC loctated in server room.</li>
+<li>Turn on both KUKA hardware controllers (in the server room, below lwr-controller PC) and wait till they are fully initialized.</li>
+<li>On both KCP (KUKA Control Panel):<ol type="a">
+<li>Click Ackn. All.</li>
+<li>From menu Configure choose 6 set tool/base, set tool no. parameter to 2 and click OK.</li>
+<li>In the file browser select file fri_start and choose Select.</li>
+<li>Switch the Mode Selector key to position Automatic (upper-left).</li>
+<li>Click button Enable drives (the button next to the Mode Selector key).</li>
+<li>Run the script by pushing several times the Start Key button (the green button with + sign). All three indicators at the bottom of the screen should be green.</li>
+</ol>
+</li>
+<li><p class="startli">The following commands should be executed in multiple terminals. In each terminal, workspace configuration file should be sourced: </p><pre class="fragment"> source path_to_workspace/top/devel/setup.bash
+</pre><p class="startli">and ROS master URI should be set to lwr-controller: </p><pre class="fragment">   export ROS_MASTER_URI=http://lwr-controller:11311
+</pre></li>
+<li>Execute the following commands on lwr-controller using multiple SSH connections:<ol type="a">
+<li>Initialize ROS: <pre class="fragment"> roscore
+</pre></li>
+<li>Run real effector of torso, neck and grippers (devices connected to Ethercat): <pre class="fragment"> roslaunch velma_ec_driver velma_ec_re.launch
+</pre></li>
+<li>Run real effector of right manipulator: <pre class="fragment"> roslaunch velma_core_re_lwr velma_re_lwr_r.launch
+</pre></li>
+<li>Run real effector of left manipulator: <pre class="fragment"> roslaunch velma_core_re_lwr velma_re_lwr_l.launch
+</pre></li>
+<li><p class="startli">Run virtual effector of whole body: </p><pre class="fragment"> roslaunch velma_core_ve_body velma_gazebo_ve_body.launch cset:=true
+</pre><p class="startli">the cset roslaunch argument indicates that the subsystem should run on single, predefined cpu.</p>
+</li>
+<li><p class="startli">Run control subsystem of the core agent: </p><pre class="fragment"> roslaunch velma_core_cs velma_core_cs.launch cset:=true
+</pre><p class="startli">the cset roslaunch argument indicates that the subsystem should run on single, predefined cpu.</p>
+</li>
+<li>Run ROS interface of the control subsystem of the task agent: <pre class="fragment"> roslaunch velma_task_cs_ros_interface velma_task_cs_ros_interface.launch
+</pre></li>
+</ol>
+</li>
+</ol>
+<h2>Running additional tools:</h2>
+<ul>
+<li>robot state visualization tools:<ul>
+<li><p class="startli">rviz to see the state of the robot: </p><pre class="fragment">  rosrun rviz rviz
+</pre><p class="startli">You have to add RobotModel and some relevant ROS topics to see the state of the robot. The documentation is available <a href="http://wiki.ros.org/rviz">here</a>.</p>
+</li>
+<li><p class="startli">visualization of self collision geometric shapes and interactions between them: </p><pre class="fragment">  roslaunch velma_common show_collisions.launch
+</pre><p class="startli">Remember to add appropriate ROS topic in rviz.</p>
+</li>
+<li><p class="startli">visialization of camera frustum for kinect </p><pre class="fragment">  roslaunch velma_common show_kinect_frustum.launch
+</pre><p class="startli">Remember to add appropriate ROS topic in rviz.</p>
+</li>
 <li>rqt utility to see the state of the subsystems: <pre class="fragment">  rosrun rqt_agent rqt_agent
 </pre></li>
-<li><p class="startli">rviz to see the state of the robot: </p><pre class="fragment">  rosrun rviz rviz
-</pre><p class="startli">You have to add RobotModel and some relevant ROS topics to see the state of the robot.</p>
+</ul>
 </li>
-<li>gazebo client to see the state of simulator: <pre class="fragment">  roslaunch rcprg_gazebo_utils gazebo_client.launch
+<li><p class="startli">Gazebo-specific tools:</p><ul>
+<li>Gazebo client to see the state of simulator: <pre class="fragment">  roslaunch rcprg_gazebo_utils gazebo_client.launch
 </pre></li>
-<li>planner for Velma robot: <pre class="fragment">  roslaunch planner planner.launch
+<li>ROS node that published pose of a specified object to tf ROS topic: <pre class="fragment">  roslaunch rcprg_gazebo_utils gazebo_publish_ros_tf_object.launch
+</pre></li>
+<li><p class="startli">world editor: </p><pre class="fragment">  roslaunch rcprg_gazebo_utils gazebo_world_editor.launch
+</pre><p class="startli">Please note that this launch file runs new Gazebo server, so all other servers should be closed.</p>
+</li>
+<li>ROS node that adds object to simulated environment during simulation: <pre class="fragment">  roslaunch rcprg_gazebo_utils spawn_object.launch
 </pre></li>
 </ul>
-<p>Please see <a class="el" href="rcprg_gazebo_utils_readme.html">rcprg_gazebo_utils</a> and <a class="el" href="velma_common_readme.html">velma_common</a> for more launch files. </p>
+<p class="startli">Please refer to <a class="el" href="rcprg_gazebo_utils_readme.html">rcprg_gazebo_utils</a> for details about launch file arguments and other launch files.</p>
+</li>
+<li><p class="startli">planner for Velma robot: </p><pre class="fragment">  roslaunch planner planner.launch
+</pre><p class="startli">Please refer to <a class="el" href="planner_readme.html">planner</a> for details about launch file arguments.</p>
+</li>
+<li><p class="startli">octomap server:</p><ul>
+<li>online octomap server and point cloud filter: <pre class="fragment">  roslaunch velma_common octomap_server.launch
+</pre></li>
+<li>offline octomap server: <pre class="fragment">  roslaunch velma_common octomap_offline_server.launch octomap_file:=&lt;filename&gt;
+</pre></li>
+</ul>
+<p class="startli">Please refer to <a class="el" href="velma_common_readme.html">velma_common</a> for details about launch file arguments and other launch files.</p>
+</li>
+</ul>
+<p>Please see <a href="pages.html">Related pages</a> for more launch files. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

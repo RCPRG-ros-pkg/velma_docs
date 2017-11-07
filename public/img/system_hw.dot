@@ -16,7 +16,8 @@ digraph graphname {
         velma_core_ve_body -> velma_core_re_lwr_l;
         velma_core_re_lwr_r -> velma_core_ve_body;
         velma_core_re_lwr_l -> velma_core_ve_body;
-        {rank=sink velma_core_re_lwr_r; velma_core_re_lwr_l; velma_ec_driver;}
+        kinect_hw -> velma_core_vr_kinect;
+        {rank=sink kinect_hw; velma_core_re_lwr_r; velma_core_re_lwr_l; velma_ec_driver;}
         label = "velma_core agent";
     }
 

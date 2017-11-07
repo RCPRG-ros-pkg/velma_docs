@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>WUT Velma Python interfaces: velma_task_cs_ros_interface</title>
+<title>WUT Velma Python interfaces: planner</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,12 +78,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">velma_task_cs_ros_interface </div>  </div>
+<div class="title">planner </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This package defines and implements control subsystem of Velma task agent.</p>
+<div class="textblock"><p>This package implements planner for WUT Velma robot.</p>
 <p>It provides ROS launch file:</p><ul>
-<li><a class="el" href="velma__task__cs__ros__interface_8launch.html">velma_task_cs_ros_interface.launch</a> - runs the subsystem </li>
+<li><a class="el" href="planner_8launch.html">planner.launch</a> - runs the planner; arguments:<ul>
+<li>debug - if <code>true</code>, the planner is executed in gdb.</li>
+<li>planning_plugin - please refer to ROS MoveIt and OMPL documentation</li>
+<li>planning_adapters - please refer to ROS MoveIt and OMPL documentation </li>
+</ul>
+</li>
 </ul>
 </div></div><!-- contents -->
 <!-- start footer part -->

@@ -1,0 +1,15 @@
+/**
+@defgroup integration_tests Intergation tests
+@brief Scripts that test the whole control system for WUT Velma robot.
+*/
+
+/**
+@defgroup utilities Utilities
+@brief Python scripts that vizualise some nice markers and publishes ROS topics
+*/
+
+/**
+@defgroup python_api ROS Python API
+@brief Python source files that implement ROS API for WUT Velma.
+*/
+
