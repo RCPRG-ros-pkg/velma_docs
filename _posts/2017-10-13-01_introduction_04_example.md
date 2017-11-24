@@ -3,7 +3,7 @@ layout: task
 title: Example system
 category: lab
 lab: 1
-task: 3
+task: 4
 brief: An example system.
 ---
 

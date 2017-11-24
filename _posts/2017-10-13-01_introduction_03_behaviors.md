@@ -3,7 +3,7 @@ layout: task
 title: Behaviors of core agent
 category: lab
 lab: 1
-task: 2
+task: 3
 brief: Specification of behaviors of subsystems of core agent.
 ---
 
@@ -168,15 +168,4 @@ With predicates defined as:
 * $$\scriptsize \texttt{recvSafeColCmd}$$ - received safe self collision avoidance command from *velma_task* agent,
 * $$\scriptsize \texttt{inSelfCollision}$$ - the robot is in self collision state,
 * $$\scriptsize \texttt{IN_ERROR}$$ - the state ends with error condition satisfied; this predicate is valid in transition conditions only.
-
-
-[comment]: ## Bibliography
-[comment]: TODO
-
-[comment]: * Rozdział 11: _Camera models and calibration_ (str. 270-404) z książki _Learning OpenCV. Computer Vision with the OpenCV Library_, Gary Bradski and Adrian Kaehler, O'Reilly Media, 2008
-[comment]: * OpenCV reference manual: [Camera Calibration and 3D Reconstruction](http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html)
-[comment]:  * [findChessboardCorners](http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#findchessboardcorners)
-[comment]:  * [findCirclesGrid](http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#findcirclesgrid)
-[comment]:  * [calibrateCamera](http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#calibratecamera)
-[comment]:  * [undistort](http://docs.opencv.org/2.4/modules/imgproc/doc/geometric_transformations.html#undistort)
 
