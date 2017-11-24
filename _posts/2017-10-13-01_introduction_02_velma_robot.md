@@ -1,10 +1,10 @@
 ---
 layout: task
-title: WUT Velma Robot specification
+title: About WUT Velma Robot
 category: lab
 lab: 1
 task: 2
-brief: Specification of WUT Velma Robot, i.e. kinematic structure, joint limits.
+brief: Overview of WUT Velma Robot, i.e. kinematic structure, joint limits, example tasks.
 ---
 
 ## About
@@ -54,7 +54,8 @@ Other joints are impedance controlled:
 
 ## Initial configuration
 
-Visualization of initial configuration:
+The simulated robot is initialized in configuration presented below.
+Visualization of the initial configuration:
 ![]({{site.baseurl}}/public/img/velma_init.png)
 
 | joint name        | initial position  |
@@ -76,4 +77,8 @@ Visualization of initial configuration:
 | left_arm_6_joint  | 0                 |
 
 Initial position for all other joints (i.e. neck and grippers) is 0.
+
+## Example tasks
+
+Please refer to videos at [https://www.robotyka.ia.pw.edu.pl/robots/velma](https://www.robotyka.ia.pw.edu.pl/robots/velma).
 
