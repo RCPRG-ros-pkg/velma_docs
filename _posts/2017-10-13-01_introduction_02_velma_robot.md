@@ -9,7 +9,9 @@ brief: Overview of WUT Velma Robot, i.e. kinematic structure, joint limits, exam
 
 ## About
 
-This section presents specification of Velma Robot hardware.
+This section presents specification of WUT Velma Robot hardware. The robot is equipped with rotational torso (1 DOF),
+two arms KUKA LWR (7 DOFs each), two BarrettHand grippers (4 DOFs, 8 joints each) and neck (2 DOFs).
+The head is equipped with RGB-D camera (Kinect).
 
 **Please note:** The scope of this section is crucial for even basic understanding of the system.
 
