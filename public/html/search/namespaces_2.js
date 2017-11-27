@@ -6,6 +6,7 @@ var searchData=
   ['int_5fmarkers_5fcimp',['int_markers_cimp',['../namespacescripts_1_1int__markers__cimp.html',1,'scripts']]],
   ['pose_5fint_5fmarker',['pose_int_marker',['../namespacescripts_1_1pose__int__marker.html',1,'scripts']]],
   ['publish_5fcamera_5ffrustum',['publish_camera_frustum',['../namespacescripts_1_1publish__camera__frustum.html',1,'scripts']]],
+  ['publish_5fjoints_5fvisualization',['publish_joints_visualization',['../namespacescripts_1_1publish__joints__visualization.html',1,'scripts']]],
   ['scripts',['scripts',['../namespacescripts.html',1,'']]],
   ['show_5fcollisions',['show_collisions',['../namespacescripts_1_1show__collisions.html',1,'scripts']]],
   ['subsystem_5fcommon',['subsystem_common',['../namespacesubsystem__common.html',1,'']]],

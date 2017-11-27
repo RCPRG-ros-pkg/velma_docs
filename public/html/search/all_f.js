@@ -7,5 +7,6 @@ var searchData=
   ['octomap_5fserver_2elaunch',['octomap_server.launch',['../octomap__server_8launch.html',1,'']]],
   ['octomaplistener',['OctomapListener',['../classplanner_1_1planner_1_1OctomapListener.html',1,'planner::planner']]],
   ['operation',['operation',['../namespacescripts_1_1test__jimp__planning__attached.html#ab215df7aba8da43dadec83fbcad0b3b6',1,'scripts::test_jimp_planning_attached']]],
-  ['origin',['origin',['../classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1VisualMesh.html#a16a38e8c3c8bc48c32a8d4a223a8855f',1,'velma_common::velma_interface::VelmaInterface::VisualMesh']]]
+  ['orig',['orig',['../namespacescripts_1_1publish__joints__visualization.html#a8dd95c2b5f1d9740a148359235d813ba',1,'scripts::publish_joints_visualization']]],
+  ['origin',['origin',['../classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1VisualMesh.html#a16a38e8c3c8bc48c32a8d4a223a8855f',1,'velma_common.velma_interface.VelmaInterface.VisualMesh.origin()'],['../namespacescripts_1_1publish__joints__visualization.html#aef4d3c436d6abf07d34e3dd345b15945',1,'scripts.publish_joints_visualization.origin()']]]
 ];

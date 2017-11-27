@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><p class="startli">RE of simulated Velma robot: </p><pre class="fragment">  roslaunch velma_sim_gazebo velma_gazebo_re.launch
 </pre><p class="startli">Please refer to documentation of <a class="el" href="velma_sim_gazebo_readme.html">velma_sim_gazebo</a> for details about launch file arguments.</p>
 </li>
-<li><p class="startli">VE of simulated Velma robot: </p><pre class="fragment">  roslaunch velma_core_ve_body velma_gazebo_ve_body.launch
+<li><p class="startli">VE of simulated Velma robot: </p><pre class="fragment">  roslaunch velma_core_ve_body velma_core_ve_body.launch
 </pre><p class="startli">Please refer to documentation of <a class="el" href="velma_core_ve_body_readme.html">velma_core_ve_body</a> for details about launch file arguments.</p>
 </li>
 <li><p class="startli">CS of core agent: </p><pre class="fragment">  roslaunch velma_core_cs velma_core_cs.launch
@@ -150,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </pre></li>
 <li>Run real effector of left manipulator: <pre class="fragment"> roslaunch velma_core_re_lwr velma_re_lwr_l.launch
 </pre></li>
-<li><p class="startli">Run virtual effector of whole body: </p><pre class="fragment"> roslaunch velma_core_ve_body velma_gazebo_ve_body.launch cset:=true
+<li><p class="startli">Run virtual effector of whole body: </p><pre class="fragment"> roslaunch velma_core_ve_body velma_core_ve_body.launch cset:=true
 </pre><p class="startli">the cset roslaunch argument indicates that the subsystem should run on single, predefined cpu.</p>
 </li>
 <li><p class="startli">Run control subsystem of the core agent: </p><pre class="fragment"> roslaunch velma_core_cs velma_core_cs.launch cset:=true

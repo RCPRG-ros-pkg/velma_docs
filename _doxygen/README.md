@@ -47,7 +47,7 @@ Usually is is *setup.bash* script in devel ot install space of top level workspa
          Please refer to documentation of @ref velma_sim_gazebo_readme for details about launch file arguments.
         - VE of simulated Velma robot:
 
-                roslaunch velma_core_ve_body velma_gazebo_ve_body.launch
+                roslaunch velma_core_ve_body velma_core_ve_body.launch
 
          Please refer to documentation of @ref velma_core_ve_body_readme for details about launch file arguments.
         - CS of core agent:
@@ -115,7 +115,7 @@ Usually is is *setup.bash* script in devel ot install space of top level workspa
 
   5. Run virtual effector of whole body:
 
-          roslaunch velma_core_ve_body velma_gazebo_ve_body.launch cset:=true
+          roslaunch velma_core_ve_body velma_core_ve_body.launch cset:=true
 
    the cset roslaunch argument indicates that the subsystem should run on single, predefined cpu.
 
