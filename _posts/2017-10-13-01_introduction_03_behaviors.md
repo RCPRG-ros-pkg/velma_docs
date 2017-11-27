@@ -162,10 +162,10 @@ With predicates defined as:
 * $$\scriptsize \texttt{veBodyStatusValid}$$ - received new status data from *velma_core_ve_body*,
 * $$\scriptsize \texttt{veBodyInSafeState}$$ - *velma_core_ve_body* is not in one of its *safe* states (i.e. *safe*, *safe_st*, *safe_st_ok* or *idle*),
 * $$\scriptsize \texttt{CURRENT_BEHAVIOR_OK}$$ - all component of the control subsystem are working properly (i.e. there are no errors in current transition function),
-* $$\scriptsize \texttt{recvOneCmd}$$ - received exactly on command from *velma_task* agent,
-* $$\scriptsize \texttt{recvCartImpCmd}$$ - received cartesian impedance command from *velma_task* agent,
-* $$\scriptsize \texttt{recvJntImpCmd}$$ - received joint impedance command from *velma_task* agent,
-* $$\scriptsize \texttt{recvSafeColCmd}$$ - received safe self collision avoidance command from *velma_task* agent,
+* $$\scriptsize \texttt{recvOneCmd}$$ - received exactly on command from *velma_ros_interface* agent,
+* $$\scriptsize \texttt{recvCartImpCmd}$$ - received cartesian impedance command from *velma_ros_interface* agent,
+* $$\scriptsize \texttt{recvJntImpCmd}$$ - received joint impedance command from *velma_ros_interface* agent,
+* $$\scriptsize \texttt{recvSafeColCmd}$$ - received safe self collision avoidance command from *velma_ros_interface* agent,
 * $$\scriptsize \texttt{inSelfCollision}$$ - the robot is in self collision state,
 * $$\scriptsize \texttt{IN_ERROR}$$ - the state ends with error condition satisfied; this predicate is valid in transition conditions only.
 

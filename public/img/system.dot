@@ -3,7 +3,7 @@ digraph graphname {
         style=rounded
         node [style=filled shape=box style=rounded];
         {rank = same; velma_task_cs_ros_interface;}
-        label = "velma_task agent";
+        label = "velma_ros_interface agent";
     }
 
     subgraph cluster_2 {
