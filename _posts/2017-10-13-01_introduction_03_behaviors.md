@@ -44,7 +44,7 @@ $$\scriptsize \sigma_{\texttt{safe_st_ok},\texttt{safe}} = \neg \texttt{recvComm
 $$\scriptsize \sigma_{\texttt{safe_st_ok},\texttt{transp}} = \texttt{recvCommand} \wedge \texttt{allCmdOk} \wedge \texttt{cmdExitSafeState} \wedge \texttt{safeItPassed500} $$
 
 
-For state *transp* one transition is choosen using conditions:
+For state *transp* one transition is chosen using conditions:
 
 $$\scriptsize \sigma_{\texttt{transp},\texttt{safe_st}} = \texttt{recvStatus} \wedge \neg \texttt{allHwOk}$$
 
@@ -53,7 +53,7 @@ $$\scriptsize \sigma_{\texttt{transp},\texttt{transp_st}} = \texttt{recvStatus} 
 $$\scriptsize \sigma_{\texttt{transp},\texttt{idle}} = \neg \texttt{recvStatus}$$
 
 
-The transtion conditions for state *transp* are:
+The transition conditions for state *transp_st* are:
 
 $$\scriptsize \sigma_{\texttt{transp_st},\texttt{transp}} = \texttt{recvCommand} \wedge \texttt{allCmdOk}$$
 
