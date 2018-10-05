@@ -1,6 +1,6 @@
 ---
 layout: task
-title: Python interfaces
+title: Python API
 category: lab
 lab: 2
 task: 1
