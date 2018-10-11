@@ -3,7 +3,7 @@ layout: task
 title: Tools for visualization
 category: lab
 lab: 3
-task: 1
+task: 2
 brief: 
 ---
 
@@ -202,6 +202,7 @@ roslaunch velma_description description_test.launch
 ### Description
 
 This launch file should be executed when the system is NOT running.
+This tool is NOT related to the control system, but it can be used to verify kinematics of the robot.
 It provides a control panel with slides that can move single joints of Velma.
 
 
