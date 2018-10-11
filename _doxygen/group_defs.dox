@@ -4,11 +4,6 @@
 */
 
 /**
-@defgroup utilities Utilities
-@brief Python scripts that vizualise some nice markers and publishes ROS topics
-*/
-
-/**
 @defgroup python_api ROS Python API
 @brief Python source files that implement ROS API for WUT Velma.
 */

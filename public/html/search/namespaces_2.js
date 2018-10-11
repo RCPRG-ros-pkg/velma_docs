@@ -1,14 +1,7 @@
 var searchData=
 [
-  ['gazebo_5fmove_5fobject',['gazebo_move_object',['../namespacescripts_1_1gazebo__move__object.html',1,'scripts']]],
-  ['gazebo_5fpublish_5fros_5ftf_5fobject',['gazebo_publish_ros_tf_object',['../namespacescripts_1_1gazebo__publish__ros__tf__object.html',1,'scripts']]],
   ['initialize_5frobot',['initialize_robot',['../namespacescripts_1_1initialize__robot.html',1,'scripts']]],
-  ['int_5fmarkers_5fcimp',['int_markers_cimp',['../namespacescripts_1_1int__markers__cimp.html',1,'scripts']]],
-  ['pose_5fint_5fmarker',['pose_int_marker',['../namespacescripts_1_1pose__int__marker.html',1,'scripts']]],
-  ['publish_5fcamera_5ffrustum',['publish_camera_frustum',['../namespacescripts_1_1publish__camera__frustum.html',1,'scripts']]],
-  ['publish_5fjoints_5fvisualization',['publish_joints_visualization',['../namespacescripts_1_1publish__joints__visualization.html',1,'scripts']]],
   ['scripts',['scripts',['../namespacescripts.html',1,'']]],
-  ['show_5fcollisions',['show_collisions',['../namespacescripts_1_1show__collisions.html',1,'scripts']]],
   ['subsystem_5fcommon',['subsystem_common',['../namespacesubsystem__common.html',1,'']]],
   ['subsystem_5fdiag',['subsystem_diag',['../namespacesubsystem__common_1_1subsystem__diag.html',1,'subsystem_common']]],
   ['test_5fall',['test_all',['../namespacescripts_1_1test__all.html',1,'scripts']]],
@@ -22,6 +15,5 @@ var searchData=
   ['test_5fjimp',['test_jimp',['../namespacescripts_1_1test__jimp.html',1,'scripts']]],
   ['test_5fjimp_5fplanning',['test_jimp_planning',['../namespacescripts_1_1test__jimp__planning.html',1,'scripts']]],
   ['test_5fjimp_5fplanning_5fattached',['test_jimp_planning_attached',['../namespacescripts_1_1test__jimp__planning__attached.html',1,'scripts']]],
-  ['test_5fsafe_5fcol',['test_safe_col',['../namespacescripts_1_1test__safe__col.html',1,'scripts']]],
-  ['unpause_5fon_5finit',['unpause_on_init',['../namespacescripts_1_1unpause__on__init.html',1,'scripts']]]
+  ['test_5fsafe_5fcol',['test_safe_col',['../namespacescripts_1_1test__safe__col.html',1,'scripts']]]
 ];

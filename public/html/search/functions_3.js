@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['enablemotor',['enableMotor',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a38a48482ae1b4905b189b4ef8731e918',1,'velma_common::velma_interface::VelmaInterface']]],
-  ['enablemotors',['enableMotors',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a9057e9154b0d11fa41e7525262f30ad8',1,'velma_common::velma_interface::VelmaInterface']]],
-  ['erase6dofmarker',['erase6DofMarker',['../classscripts_1_1int__markers__cimp_1_1IntMarkersCimp.html#a51ce5af8e82568bac00f350655ef0dbf',1,'scripts.int_markers_cimp.IntMarkersCimp.erase6DofMarker()'],['../classscripts_1_1gazebo__move__object_1_1IntMarkers6D.html#a6758ff088402b6dc59b6874d2c897af6',1,'scripts.gazebo_move_object.IntMarkers6D.erase6DofMarker()']]],
-  ['erasemarkers',['eraseMarkers',['../classrcprg__ros__utils_1_1marker__publisher_1_1MarkerPublisher.html#a4a946b20660df49e3554a5e82cef6f9f',1,'rcprg_ros_utils::marker_publisher::MarkerPublisher']]],
-  ['exiterror',['exitError',['../namespacescripts_1_1test__jimp.html#ab7d3e3495795e9d7cbcb99aa97046586',1,'scripts.test_jimp.exitError()'],['../namespacercprg__ros__utils_1_1scripting.html#ac83ec7a6c446898336c4ed4efcfa0f17',1,'rcprg_ros_utils.scripting.exitError()']]]
+  ['instatecartimp',['inStateCartImp',['../classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1CoreCsDiag.html#a5814b790dc0eb9a787db39b71809d671',1,'velma_common::velma_interface::VelmaInterface::CoreCsDiag']]],
+  ['instateidle',['inStateIdle',['../classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1CoreCsDiag.html#ab492e71a86789007e9d942bc12e2a441',1,'velma_common::velma_interface::VelmaInterface::CoreCsDiag']]],
+  ['instatejntimp',['inStateJntImp',['../classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1CoreCsDiag.html#ad4aa6f3a202036d50365ce3310609c7f',1,'velma_common::velma_interface::VelmaInterface::CoreCsDiag']]],
+  ['instatesafe',['inStateSafe',['../classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1CoreCsDiag.html#a6cc4a5c9987c772fef50bb16bc3d5c66',1,'velma_common::velma_interface::VelmaInterface::CoreCsDiag']]],
+  ['instatesafecol',['inStateSafeCol',['../classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1CoreCsDiag.html#ac1adb969ccfd54360ba4c794ed6b6ab7',1,'velma_common::velma_interface::VelmaInterface::CoreCsDiag']]],
+  ['isconfigurationclose',['isConfigurationClose',['../namespacevelma__common_1_1velma__interface.html#a4d1c4df049cb18ddb6008037ed8412c0',1,'velma_common::velma_interface']]],
+  ['ishandconfigurationclose',['isHandConfigurationClose',['../namespacevelma__common_1_1velma__interface.html#abc493c2d05a8cda5312f647e64ecdfa1',1,'velma_common::velma_interface']]],
+  ['isheadconfigurationclose',['isHeadConfigurationClose',['../namespacevelma__common_1_1velma__interface.html#aadc90a017adb16c71308e7a75da786d0',1,'velma_common::velma_interface']]],
+  ['issafereasonidle',['isSafeReasonIdle',['../classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1CoreCsDiag.html#adcc456ae580d68a824490b59fe77b91b',1,'velma_common::velma_interface::VelmaInterface::CoreCsDiag']]],
+  ['issafereasonselfcol',['isSafeReasonSelfCol',['../classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1CoreCsDiag.html#a7c1cde0b1b0a2dd3b0d94ab2b6d5bfad',1,'velma_common::velma_interface::VelmaInterface::CoreCsDiag']]]
 ];
