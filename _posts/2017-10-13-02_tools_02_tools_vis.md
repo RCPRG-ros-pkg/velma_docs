@@ -32,6 +32,8 @@ It can be use to examine, for each subsystem:
  * state of Orocos components (button *Components list*),
  * data flow diagram of Orocos components (button *Behavior graph*).
 
+This script works with running control system only.
+
 ![]({{site.baseurl}}/public/img/velma_rqt_agent.png)
 
 
@@ -54,6 +56,8 @@ It publishes visual markers that visualize collision geometries and internal col
 The markers can be visualized in ROS *rviz* using topic `/self_collisions`.
 The green shapes are collision geometries and red arrows denote closeness of links.
 Also, the script outputs to the terminal names of pairs of close links and their distance.
+
+This script works with running control system only.
 
 ![]({{site.baseurl}}/public/img/velma_show_collisions.png)
 
@@ -79,6 +83,8 @@ roslaunch velma_common show_kinect_frustum.launch
 It publishes visual markers that visualize camera frustum of Kinect mounted on head of Velma.
 The markers can be visualized in ROS *rviz* using topic `/camera_frustum`.
 
+This script works with both running control system and [urdf description test](#interactive-visualization-of-kinematics).
+
 ![]({{site.baseurl}}/public/img/velma_show_camera_frustum.png)
 
 
@@ -101,6 +107,8 @@ roslaunch velma_common show_joints.launch
 It publishes visual markers that visualize position and range of joints of Velma.
 The markers can be visualized in ROS *rviz* using topic `/joints_vis`.
 Each red arrow represent axis of joint, blue arrow represent position of joint in range shown as a green plate.
+
+This script works with both running control system and [urdf description test](#interactive-visualization-of-kinematics).
 
 ![]({{site.baseurl}}/public/img/velma_show_joints.png)
 
@@ -130,6 +138,8 @@ Ranges of the right and left end effectors are visualized in green and red color
 
 Please note that near the boundary of the reachable space (i.e. close to either inner or outer sphere),
 the motion of end effector can be restricted and some orientations cannot be reached.
+
+This script works with both running control system and [urdf description test](#interactive-visualization-of-kinematics).
 
 ![]({{site.baseurl}}/public/img/velma_show_reachability_range.png)
 
