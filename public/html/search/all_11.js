@@ -3,6 +3,8 @@ var searchData=
   ['geometry',['geometry',['../namespacercprg__ros__utils_1_1geometry.html',1,'rcprg_ros_utils']]],
   ['marker_5fpublisher',['marker_publisher',['../namespacercprg__ros__utils_1_1marker__publisher.html',1,'rcprg_ros_utils']]],
   ['rcprg_5fros_5futils',['rcprg_ros_utils',['../md_rcprg_ros_utils_README.html',1,'']]],
+  ['rcprg_5fplanner',['rcprg_planner',['../planner_readme.html',1,'']]],
+  ['ros_20plugin_20for_20velma',['ROS plugin for Velma',['../pluginlib_velma_readme.html',1,'']]],
   ['ros_20python_20api',['ROS Python API',['../group__python__api.html',1,'']]],
   ['rcprg_5fgazebo_5futils',['rcprg_gazebo_utils',['../rcprg_gazebo_utils_readme.html',1,'']]],
   ['rcprg_5fplanner',['rcprg_planner',['../namespacercprg__planner.html',1,'rcprg_planner'],['../namespacercprg__planner_1_1rcprg__planner.html',1,'rcprg_planner.rcprg_planner']]],

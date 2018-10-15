@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kinect_5fhw_2elaunch',['kinect_hw.launch',['../kinect__hw_8launch.html',1,'']]]
+  ['marker_5fpublisher_2epy',['marker_publisher.py',['../marker__publisher_8py.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initialize_5frobot_2epy',['initialize_robot.py',['../initialize__robot_8py.html',1,'']]]
+  ['kinect_5fhw_2elaunch',['kinect_hw.launch',['../kinect__hw_8launch.html',1,'']]]
 ];

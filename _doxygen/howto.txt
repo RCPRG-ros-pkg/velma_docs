@@ -1,0 +1,15 @@
+1. copy files group_defs.dox, README.md and DoxygenLayout.xml to ~/ws directory
+2. create docs:
+doxygen (...)/velma_docs/_doxygen/config.dox
+
+
+How to create layout:
+in ~/ws directory:
+doxygen -l DoxygenLayout.xml ~/code/velma_docs/_doxygen/config.dox
+
+change lines
+    <tab type="pages" visible="yes" title="" intro=""/>
+    <tab type="modules" visible="yes" title="" intro=""/>
+to
+    <tab type="pages" visible="no" title="" intro=""/>
+    <tab type="modules" visible="no" title="" intro=""/>

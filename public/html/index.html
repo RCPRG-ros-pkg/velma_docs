@@ -65,20 +65,16 @@ $(function() {
 <div class="textblock"><h1>Introduction</h1>
 <p>Documentation describes high level python interface to control system of Velma robot.</p>
 <p>The robot can be controlled using class defined in <a class="el" href="velma__interface_8py.html" title="This file contains ROS-based Python interface for WUT Velma Robot and some helper functions...">velma_interface.py</a>.</p>
-<p>Motion planning is done through planner python interface defined in planner.py.</p>
+<p>Motion planning is done through planner python interface defined in <a class="el" href="rcprg__planner_8py.html">rcprg_planner.py</a>.</p>
 <p>Integration tests are presented in module <a class="el" href="group__integration__tests.html">Intergation tests</a> and they can be used:</p><ul>
 <li>to evaluate performance and correctness of the whole system,</li>
 <li>as tutorials on the interfaces.</li>
 </ul>
 <p>Additionally, utilities provide useful scripts and ROS launch files.</p>
-<p>Brief descriptions of some catkin packages are in <a href="pages.html">Related pages</a> tab. It contains sources for ROS launch files in each package. Please refer to launch files sources to get familiar with setting parameters and running the system and various useful tools.</p>
-<p>The tab <a href="modules.html">Modules</a> groups python executable scripts into <a class="el" href="group__integration__tests.html">Intergation tests</a> and utilities.</p>
-<h1>Running the system</h1>
-<pre class="fragment">roslaunch velma_sim_gazebo velma_gazebo_re.launch
-</pre><h1>Installation</h1>
-<p>Please follow the steps described in section <a href="https://github.com/RCPRG-ros-pkg/RCPRG_rosinstall/wiki/Set-up:-Velma-(latest-version)">Set up: Velma (latest version)</a>. The simulator is provided in both versions: <code>latest</code> and <code>latest_hw</code>, but if You don't want to run real hardware, install the simulation-only version (<code>latest</code>).</p>
+<h1>Installation</h1>
+<p>Please follow the steps described in page <a href="https://github.com/RCPRG-ros-pkg/RCPRG_rosinstall/wiki/Velma">Set up: Velma</a>.</p>
 <h1>Running the simulator</h1>
-<p>The setup.bash script of the workspace must be sourced in each terminal. Usually is is <em>setup.bash</em> script in devel ot install space of top level workspace.</p>
+<p>The setup.bash script of the top level workspace must be sourced in each terminal. Usually <em>setup.bash</em> script is in devel or install space of top level workspace.</p>
 <h2>Running the simulated system:</h2>
 <ol type="1">
 <li>Initialize ROS: <pre class="fragment"> roscore
@@ -137,53 +133,10 @@ $(function() {
 <li><p class="startli">Run control subsystem of the core agent: </p><pre class="fragment"> roslaunch velma_core_cs velma_core_cs.launch cset:=true
 </pre><p class="startli">the cset roslaunch argument indicates that the subsystem should run on single, predefined cpu.</p>
 </li>
-<li>Run ROS interface of the control subsystem of the task agent: <pre class="fragment"> roslaunch velma_task_cs_ros_interface velma_task_cs_ros_interface.launch
-</pre></li>
+<li>Run ROS interface of the control subsystem of the task agent: <pre class="fragment"> roslaunch velma_task_cs_ros_interface velma_task_cs_ros_interface.launch</pre> </li>
 </ol>
 </li>
 </ol>
-<h2>Running additional tools:</h2>
-<ul>
-<li>robot state visualization tools:<ul>
-<li><p class="startli">rviz to see the state of the robot: </p><pre class="fragment">  rosrun rviz rviz
-</pre><p class="startli">You have to add RobotModel and some relevant ROS topics to see the state of the robot. The documentation is available <a href="http://wiki.ros.org/rviz">here</a>.</p>
-</li>
-<li><p class="startli">visualization of self collision geometric shapes and interactions between them: </p><pre class="fragment">  roslaunch velma_common show_collisions.launch
-</pre><p class="startli">Remember to add appropriate ROS topic in rviz.</p>
-</li>
-<li><p class="startli">visialization of camera frustum for kinect </p><pre class="fragment">  roslaunch velma_common show_kinect_frustum.launch
-</pre><p class="startli">Remember to add appropriate ROS topic in rviz.</p>
-</li>
-<li>rqt utility to see the state of the subsystems: <pre class="fragment">  rosrun rqt_agent rqt_agent
-</pre></li>
-</ul>
-</li>
-<li><p class="startli">Gazebo-specific tools:</p><ul>
-<li>Gazebo client to see the state of simulator: <pre class="fragment">  roslaunch rcprg_gazebo_utils gazebo_client.launch
-</pre></li>
-<li>ROS node that published pose of a specified object to tf ROS topic: <pre class="fragment">  roslaunch rcprg_gazebo_utils gazebo_publish_ros_tf_object.launch
-</pre></li>
-<li><p class="startli">world editor: </p><pre class="fragment">  roslaunch rcprg_gazebo_utils gazebo_world_editor.launch
-</pre><p class="startli">Please note that this launch file runs new Gazebo server, so all other servers should be closed.</p>
-</li>
-<li>ROS node that adds object to simulated environment during simulation: <pre class="fragment">  roslaunch rcprg_gazebo_utils spawn_object.launch
-</pre></li>
-</ul>
-<p class="startli">Please refer to <a class="el" href="rcprg_gazebo_utils_readme.html">rcprg_gazebo_utils</a> for details about launch file arguments and other launch files.</p>
-</li>
-<li><p class="startli">planner for Velma robot: </p><pre class="fragment">  roslaunch planner planner.launch
-</pre><p class="startli">Please refer to <a class="el" href="planner_readme.html">planner</a> for details about launch file arguments.</p>
-</li>
-<li><p class="startli">octomap server:</p><ul>
-<li>online octomap server and point cloud filter: <pre class="fragment">  roslaunch velma_common octomap_server.launch
-</pre></li>
-<li>offline octomap server: <pre class="fragment">  roslaunch velma_common octomap_offline_server.launch octomap_file:=&lt;filename&gt;
-</pre></li>
-</ul>
-<p class="startli">Please refer to <a class="el" href="velma_common_readme.html">velma_common</a> for details about launch file arguments and other launch files.</p>
-</li>
-</ul>
-<p>Please see <a href="pages.html">Related pages</a> for more launch files. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

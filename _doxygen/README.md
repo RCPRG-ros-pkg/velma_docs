@@ -7,7 +7,7 @@ Documentation describes high level python interface to control system of Velma r
 
 The robot can be controlled using class defined in velma_interface.py.
 
-Motion planning is done through planner python interface defined in planner.py.
+Motion planning is done through planner python interface defined in rcprg_planner.py.
 
 Integration tests are presented in module @ref integration_tests and they can be used:
  * to evaluate performance and correctness of the whole system,
@@ -15,23 +15,12 @@ Integration tests are presented in module @ref integration_tests and they can be
 
 Additionally, @ref utilities provide useful scripts and ROS launch files.
 
-Brief descriptions of some catkin packages are in [Related pages](pages.html) tab.
-It contains sources for ROS launch files in each package. Please refer to launch files sources to
-get familiar with setting parameters and running the system and various useful tools.
-
-The tab [Modules](modules.html) groups python executable scripts into @ref integration_tests and @ref utilities.
-
-# Running the system
-
-    roslaunch velma_sim_gazebo velma_gazebo_re.launch
-
 # Installation
-Please follow the steps described in section [Set up: Velma (latest version)](https://github.com/RCPRG-ros-pkg/RCPRG_rosinstall/wiki/Set-up:-Velma-(latest-version)).
-The simulator is provided in both versions: `latest` and `latest_hw`, but if You don't want to run real hardware, install the simulation-only version (`latest`).
+Please follow the steps described in page [Set up: Velma](https://github.com/RCPRG-ros-pkg/RCPRG_rosinstall/wiki/Velma).
 
 # Running the simulator
-The setup.bash script of the workspace must be sourced in each terminal.
-Usually is is *setup.bash* script in devel ot install space of top level workspace.
+The setup.bash script of the top level workspace must be sourced in each terminal.
+Usually *setup.bash* script is in devel or install space of top level workspace.
 
 ## Running the simulated system:
 1. Initialize ROS:
@@ -128,69 +117,3 @@ Usually is is *setup.bash* script in devel ot install space of top level workspa
   7. Run ROS interface of the control subsystem of the task agent:
 
           roslaunch velma_task_cs_ros_interface velma_task_cs_ros_interface.launch
-
-
-## Running additional tools:
-* robot state visualization tools:
-  * rviz to see the state of the robot:
-
-          rosrun rviz rviz
-
-   You have to add RobotModel and some relevant ROS topics to see the state of the robot. The documentation is available [here](http://wiki.ros.org/rviz).
-
-  * visualization of self collision geometric shapes and interactions between them:
-
-          roslaunch velma_common show_collisions.launch
-
-   Remember to add appropriate ROS topic in rviz.
-
-  * visialization of camera frustum for kinect
-
-          roslaunch velma_common show_kinect_frustum.launch
-
-   Remember to add appropriate ROS topic in rviz.
-
-  * rqt utility to see the state of the subsystems:
-
-          rosrun rqt_agent rqt_agent
-
-* Gazebo-specific tools:
-  * Gazebo client to see the state of simulator:
-
-          roslaunch rcprg_gazebo_utils gazebo_client.launch
-
-  * ROS node that published pose of a specified object to tf ROS topic:
-
-          roslaunch rcprg_gazebo_utils gazebo_publish_ros_tf_object.launch
-
-  * world editor:
-
-          roslaunch rcprg_gazebo_utils gazebo_world_editor.launch
-
-   Please note that this launch file runs new Gazebo server, so all other servers should be closed.
-
-  * ROS node that adds object to simulated environment during simulation:
-
-          roslaunch rcprg_gazebo_utils spawn_object.launch
-
- Please refer to @ref rcprg_gazebo_utils_readme for details about launch file arguments and other launch files.
-* planner for Velma robot:
-
-        roslaunch planner planner.launch
-
- Please refer to @ref planner_readme for details about launch file arguments.
-
-* octomap server:
-  * online octomap server and point cloud filter:
-
-          roslaunch velma_common octomap_server.launch
-
-  * offline octomap server:
-
-          roslaunch velma_common octomap_offline_server.launch octomap_file:=<filename>
-
- Please refer to @ref velma_common_readme for details about launch file arguments and other launch files.
-
-
-Please see [Related pages](pages.html) for more launch files.
-
