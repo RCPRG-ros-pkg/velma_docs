@@ -49,9 +49,21 @@ roslaunch velma_common octomap_server.launch
 ```
 
 ### Description
-TODO
+This launchfile runs octomap node, which gathers information about occupancy of environment.
+Also, unknown (unexplored) space can be obtained.
 
+Example of octomap of known, occupied space - floor is visible (ROS topic: */occupied_cells_vis_array*):
+![]({{site.baseurl}}/public/img/velma_octomap_occupied.png)
 
+Example of octomap of unknown space (ROS topic: */unknown_cells_vis_array*):
+![]({{site.baseurl}}/public/img/velma_octomap_unknown.png)
+
+Example of octomap of known, free space (ROS topic: */free_cells_vis_array*):
+![]({{site.baseurl}}/public/img/velma_octomap_free.png)
+
+Example of merged octomap, i.e. sum of occupied space and unknown space (ROS topic: */merged_cells_vis_array*):
+![]({{site.baseurl}}/public/img/velma_octomap_merged.png)
+Planner uses the merged octomap to generate trajectories that avoid both occupied and unknown space.
 
 
 
@@ -70,10 +82,8 @@ roslaunch velma_common octomap_offline_server.launch
 ```
 
 ### Description
-TODO
 
-
-
+This launch file runs octomap server that uses saved octomap. The octomap in offline server cannot be updated with new observations.
 
 
 
