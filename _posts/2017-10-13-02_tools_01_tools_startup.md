@@ -45,18 +45,21 @@ Omission of such cleanup can occasionally cause a deadlock between pair of subsy
 
 # Cleanup of shared memory communication channels
 
+### Location
+
+ * script: `reset_shm_comm` in package `velma_common`
+
 ### Command
 
 ```bash
-rm /dev/shm/*
+rosrun velma_common reset_shm_comm
 ```
 
 ### Description
 
-This command removes all shared memory files, in `/dev/shm/` directory.
-This cleanup is sometimes needed before start-up of the system.
+This script removes all shared memory files, in `/dev/shm/` directory, related to control system of Velma.
+This cleanup is needed before every start-up of the system.
 The buffers must be cleaned up because of a bug in glibc library.
-
 
 
 
