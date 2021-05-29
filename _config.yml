@@ -1,39 +1,79 @@
-# Permalinks
-permalink:           /:year/:month/:day/:title/
+# ----
+# Site
 
-# Setup
-title:               Documentation of control system of WUT Velma Robot
-tagline:             WUT Velma Robot
-url:                 ""
-baseurl:             "/velma_docs"
-future:              true
+title: WUT Velma Robot
+url: "https://rcprg-ros-pkg.github.io/velma_docs"
+baseurl:
+google_analytics_key:
+show_full_navigation: true
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
-
-# About/contact
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Product documentation template for Jekyll.
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name: WUT Velma Robot
+  links:
+    - https://github.com/RCPRG-ros-pkg
 
-# Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/poole/poole
+# -----
+# Build
 
-# Gems
-gems:
-  - jekyll-gist
-#  - kramdown
-#  - rouge
+timezone: Etc/UTC
 
-#markdown: kramdown
-#kramdown:
-#  input: GFM
-#  syntax_highlighter: rouge
+permalink: pretty
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+collections:
+  docs:
+    title: Documentation
+    permalink: /:path/
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      seo:
+        type: Article
+      _comments:
+        category: Group navigation links with this field
+        order: Used to sort links in the navigation
+      _options:
+        content:
+          width: 800
+          height: 2000
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      _comments:
+        type: Marks the impact of this release
+
+# -----------
+# CloudCannon
+
+types:
+  - minor
+  - major
