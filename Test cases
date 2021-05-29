@@ -1,0 +1,179 @@
+Test cases
+
+Procedures for human operator:
+- PROC_RUN_VELMA_SIM
+- PROC_RUN_VELMA_HW
+- PROC_RUN_ROCO_NODES
+- PROC_EXPLORE_AR
+- PROC_EXPLORE_FULL_VISION
+- PROC_MOVE_TO_START
+- PROC_STOP_VELMA_SIM
+- PROC_STOP_VELMA_HW
+- PROC_STOP_ROCO_NODES
+- PROC_CALIBRATE
+
+PROC_RUN_VELMA_SIM
+roscore
+Run the system in simulated world with RoCo environment:
+roslaunch roko_nodes velma_system_roko.launch world_name:=worlds/simple.world
+Wait until the simulated system is fully initialized.
+Run the control panel of Velma:
+rosrun rqt_velma rqt_velma
+In the control panel click "Initialize Robot" button.
+Then click "Move to the initial configuration" button.
+
+Recommended:
+roslaunch rcprg_gazebo_utils gazebo_client.launch
+rosrun rviz rviz
+rosrun rqt_agent rqt_agent
+
+PROC_RUN_VELMA_HW
+Turn on power supply.
+In the server room:
+  - turn on the lwr-controller PC
+  - turn on both KUKA LWR controllers
+
+All of the following commands are executed on lwr-controller PC, through ssh.
+To login through ssh to lwr-controller, type:
+ssh robot@lwr-controller
+(the password is the same as user name).
+
+Each real effector (left arm, right arm, torso/neck) can run on the real H/W or on simulated H/W.
+If you want to run the real-world system on fully simulated H/W, execute in separate terminals on lwr-controller:
+roscore
+roslaunch velma_sim velma_sim_re.launch
+roslaunch velma_lwr_sim velma_sim_re_lwr_r.launch
+roslaunch velma_lwr_sim velma_sim_re_lwr_l.launch
+roslaunch velma_core_ve_body velma_core_ve_body.launch
+roslaunch velma_core_cs velma_core_cs.launch load_robot_description:=true
+roslaunch velma_task_cs_ros_interface velma_task_cs_ros_interface.launch 
+This configuration is used mainly to test performance of the control system.
+
+
+To run real H/W torso/neck and simulated arms, execute in separate terminals on lwr-controller:
+roscore
+roslaunch velma_ec_driver velma_ec_re.launch
+roslaunch velma_lwr_sim velma_sim_re_lwr_r.launch
+roslaunch velma_lwr_sim velma_sim_re_lwr_l.launch
+roslaunch velma_core_ve_body velma_core_ve_body.launch
+roslaunch velma_core_cs velma_core_cs.launch load_robot_description:=true
+roslaunch velma_task_cs_ros_interface velma_task_cs_ros_interface.launch 
+This configuration is used mainly to test torso and neck motions and for experiments with cameras.
+
+
+To run real H/W torso/neck and real H/W arms, you have to run real H/W torso/neck and simulated arms first.
+Firstly, execute in separate terminals on lwr-controller the same commands as for real H/W torso/neck and simulated arms.
+Then, interrupt velma_sim_re_lwr_r and velma_sim_re_lwr_l with Ctrl+C and execute:
+roslaunch velma_core_re_lwr velma_re_lwr_r.launch
+roslaunch velma_core_re_lwr velma_re_lwr_l.launch
+
+To connect ROS nodes on other machines to ROS master at lwr-controller, add the following line to your .bashrc:
+export ROS_MASTER_URI=http://lwr-controller:11311
+
+PROC_RUN_ROCO_NODES
+roslaunch roko_nodes roko_nodes.launch world_model:=jar_opened.xml perception_mode:=gazebo
+
+PROC_EXPLORE_AR
+TODO: DS
+
+PROC_EXPLORE_FULL_VISION
+TODO: MS
+
+PROC_MOVE_TO_START
+TODO: DS
+
+PROC_STOP_VELMA_SIM
+TODO: DS
+
+PROC_STOP_VELMA_HW
+TODO: DS
+
+PROC_STOP_ROCO_NODES
+TODO: DS
+
+PROC_CALIBRATE
+TODO: WS, DS, MS
+
+
+There are multiple options for running the system.
+The system can run in simulated world (in Gazebo) or in real world.
+There are multiple simulated worlds that can be loaded by Gazebo.
+Each simulated world, or real world, can be associated with multiple world models loded by
+roko_fake_knowledgebase node.
+Each world model contains information about objects in the environment and their state.
+Each object is associated with its model.
+
+Typical use case:
+  1. run the control system (a_ex)
+    - in simulation: run the simulator and control system (Gazebo, a_ex)
+    - in real world: run the control system (a_ex)
+  2. run RoCo nodes (a_kb, a_pl)
+  3. explore environment - optional
+  4. run the task (a_ta)
+  5. stop roko_nodes and go back to 2 - optional
+  6. stop the system
+
+Running the simulation:
+Parameters for a single run of simulator:
+- when running Gazebo:
+  - .world file
+- when running roko_nodes:
+  - KB world models
+    - for different stages of execution
+    - with human redable description
+  - perception option:
+    - fake - some objects can be localized precisely on init - this can be incorporated in world model
+    - AR markers
+    - full visual perception
+
+Every world model for Gazebo (in roko_nodes/data/gazebo/worlds) is associated with a number of
+world models (in roko_nodes/data/world_models). The node roko_fake_knowledgebase allows to load
+only those world models that are allowed by the current world loaded by Gazebo.
+
+Offline run (only a_pl and a_kb):
+  - only world model is read
+  TODO
+
+Running the real world robot:
+  - arms option:
+    - H/W arms
+    - fake arms
+  - perception option:
+    - AR markers
+    - full visual perception
+  - load different world models
+  - exploration of space is obligatory
+
+
+roko_scene.world
+WorldModel_full_00.xml
+- cabinet with doors is on the left
+- empty table is on the right
+- jar and bowl are in the cabinet
+- cabinet is closed
+
+
+roko_simple_2.world
+WorldModel_roko_simple_2.xml
+- the jar is closed
+
+WorldModel_roko_simple_2_opened.xml
+- the jar is opened
+
+
+roko_simple_real.world
+WorldModel_roko_simple_real.xml
+
+MARKDOWN:
+dorpdowns:
+<details>
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
+</details>
+
+<details open>
+<summary>Want to ruin the surprise?</summary>
+<br>
+Well, you asked for it!
+</details>

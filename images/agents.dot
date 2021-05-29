@@ -1,0 +1,10 @@
+digraph graphname {
+    velma_ros_interface [style=filled shape=box style=rounded label = "velma_ros_interface"];
+    {rank=sink velma_core [style=filled shape=box style=rounded label = "velma_core"];}
+
+    velma_ros_interface -> velma_core;
+    velma_core -> velma_ros_interface;
+
+    margin=0;   # for whole graph
+}
+
