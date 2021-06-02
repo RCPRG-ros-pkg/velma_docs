@@ -5,8 +5,6 @@ order: 1
 brief: Installation
 ---
 
-Please refer to [Installation instruction](https://github.com/RCPRG-ros-pkg/RCPRG_rosinstall/wiki/Velma).
-
 # Setup of Velma robot controller
 
 This page describes how to set up workspace for WUT Velma robot simulation. The build procedure
