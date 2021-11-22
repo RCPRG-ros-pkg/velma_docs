@@ -27,11 +27,39 @@ It can be use to examine, for each subsystem:
  * state of Orocos components (button *Components list*),
  * data flow diagram of Orocos components (button *Behavior graph*).
 
-This script works with running control system only.
+This script works with a running control system only.
 
 ![]({{ site.baseurl }}/images/velma_rqt_agent.png)
 
 
+
+# Control panel for Velma robot
+
+**Command**
+```bash
+rosrun rqt_velma rqt_velma
+```
+
+**Description**
+*rqt_velma* is a GUI tool that shows state of Velma robot and allows execution of some simple commands:
+ * initialize robot
+ * enable motors
+ * switch to one of normalOperation substates: cartesianImpedance, jointImpedance, relax
+ * move to the initial configuration (without planning, so be careful!)
+ * reset, open or close grippers
+
+The state shown is:
+ * state of core/a./cs subsystem
+ * state of motors
+ * state of core/a.body/ve subsystem
+ * position of all joints of head, torso and arms
+ * 2-D visualization of position of two last joints of each manipulator
+
+Each joint position is shown with its position constraints.
+
+This script works with a running control system only.
+
+![]({{ site.baseurl }}/images/velma_rqt_velma.png)
 
 
 
@@ -48,7 +76,7 @@ The markers can be visualized in ROS *rviz* using topic `/self_collisions`.
 The green shapes are collision geometries and red arrows denote closeness of links.
 Also, the script outputs to the terminal names of pairs of close links and their distance.
 
-This script works with running control system only.
+This script works with a running control system only.
 
 ![]({{ site.baseurl }}/images/velma_show_collisions.png)
 
@@ -70,7 +98,7 @@ roslaunch velma_common show_kinect_frustum.launch
 It publishes visual markers that visualize camera frustum of Kinect mounted on head of Velma.
 The markers can be visualized in ROS *rviz* using topic `/camera_frustum`.
 
-This script works with both running control system and [urdf description test](#interactive-visualization-of-kinematics).
+This script works with both a running control system and [urdf description test](#interactive-visualization-of-kinematics).
 
 ![]({{ site.baseurl }}/images/velma_show_camera_frustum.png)
 
@@ -92,7 +120,7 @@ It publishes visual markers that visualize position and range of joints of Velma
 The markers can be visualized in ROS *rviz* using topic `/joints_vis`.
 Each red arrow represent axis of joint, blue arrow represent position of joint in range shown as a green plate.
 
-This script works with both running control system and [urdf description test](#interactive-visualization-of-kinematics).
+This script works with both a running control system and [urdf description test](#interactive-visualization-of-kinematics).
 
 ![]({{ site.baseurl }}/images/velma_show_joints.png)
 
@@ -119,7 +147,7 @@ Ranges of the right and left end effectors are visualized in green and red color
 Please note that near the boundary of the reachable space (i.e. close to either inner or outer sphere),
 the motion of end effector can be restricted and some orientations cannot be reached.
 
-This script works with both running control system and [urdf description test](#interactive-visualization-of-kinematics).
+This script works with both a running control system and [urdf description test](#interactive-visualization-of-kinematics).
 
 ![]({{ site.baseurl }}/images/velma_show_reachability_range.png)
 
