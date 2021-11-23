@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classsubsystem__common_1_1subsystem__diag_1_1SubsystemDiag_1_1PredicateValue.html" title="subsystem_common.subsystem\l_diag.SubsystemDiag.PredicateValue" alt="" coords="5,5,248,47"/>
+<area shape="rect" id="node2" href="$classrqt__agent_1_1behavior__graph_1_1GraphView.html" title="rqt_agent.behavior\l_graph.GraphView" alt="" coords="207,5,336,47"/>
+<area shape="rect" id="node3" href="$classrqt__agent_1_1fsm__graph_1_1GraphView.html" title="rqt_agent.fsm_graph.GraphView" alt="" coords="167,71,376,98"/>
+<area shape="rect" id="node4" href="$classrqt__velma_1_1velma__control__panel__widget_1_1Joint2Vis.html" title="rqt_velma.velma_control\l_panel_widget.Joint2Vis" alt="" coords="189,123,353,164"/>
+<area shape="rect" id="node5" href="$classrqt__velma_1_1velma__control__panel__widget_1_1JointVis.html" title="rqt_velma.velma_control\l_panel_widget.JointVis" alt="" coords="189,188,353,229"/>
 </map>

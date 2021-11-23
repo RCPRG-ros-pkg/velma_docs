@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['velma_5fcore_5fcs_2elaunch',['velma_core_cs.launch',['../velma__core__cs_8launch.html',1,'']]],
-  ['velma_5fcore_5fve_5fbody_2elaunch',['velma_core_ve_body.launch',['../velma__core__ve__body_8launch.html',1,'']]],
-  ['velma_5fgazebo_5fre_2elaunch',['velma_gazebo_re.launch',['../velma__gazebo__re_8launch.html',1,'']]],
-  ['velma_5finterface_2epy',['velma_interface.py',['../velma__interface_8py.html',1,'']]],
-  ['velma_5fplanner_2elaunch',['velma_planner.launch',['../velma__planner_8launch.html',1,'']]],
-  ['velma_5fsim_5fre_2elaunch',['velma_sim_re.launch',['../velma__sim__re_8launch.html',1,'']]],
-  ['velma_5fsim_5fre_5flwr_5fl_2elaunch',['velma_sim_re_lwr_l.launch',['../velma__sim__re__lwr__l_8launch.html',1,'']]],
-  ['velma_5fsim_5fre_5flwr_5fr_2elaunch',['velma_sim_re_lwr_r.launch',['../velma__sim__re__lwr__r_8launch.html',1,'']]],
-  ['velma_5fsystem_2elaunch',['velma_system.launch',['../velma__system_8launch.html',1,'']]],
-  ['velma_5ftask_5fcs_5fros_5finterface_2elaunch',['velma_task_cs_ros_interface.launch',['../velma__task__cs__ros__interface_8launch.html',1,'']]],
-  ['velma_5fworkspace_5ftool_2elaunch',['velma_workspace_tool.launch',['../velma__workspace__tool_8launch.html',1,'']]]
+  ['object_5fmanipulation_5fhardware_2epy',['object_manipulation_hardware.py',['../object__manipulation__hardware_8py.html',1,'']]],
+  ['object_5fmanipulation_5fhw_2dsim_2epy',['object_manipulation_hw-sim.py',['../object__manipulation__hw-sim_8py.html',1,'']]],
+  ['octomap_5foffline_5fserver_2elaunch',['octomap_offline_server.launch',['../octomap__offline__server_8launch.html',1,'']]],
+  ['octomap_5fserver_2elaunch',['octomap_server.launch',['../octomap__server_8launch.html',1,'']]],
+  ['odom_5flocalization_2epy',['odom_localization.py',['../odom__localization_8py.html',1,'']]]
 ];

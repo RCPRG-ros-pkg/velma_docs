@@ -78,9 +78,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4d1c4df049cb18ddb6008037ed8412c0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevelma__common_1_1velma__interface.html#a4d1c4df049cb18ddb6008037ed8412c0">isConfigurationClose</a> (q_map1, q_map2, tolerance=0.1)</td></tr>
-<tr class="memdesc:a4d1c4df049cb18ddb6008037ed8412c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two configurations of robot body are close within tolerance.  <a href="#a4d1c4df049cb18ddb6008037ed8412c0">More...</a><br /></td></tr>
-<tr class="separator:a4d1c4df049cb18ddb6008037ed8412c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0aba4f9c409ef7101d42a5ad8c42fc7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevelma__common_1_1velma__interface.html#ab0aba4f9c409ef7101d42a5ad8c42fc7">getSymmetricalJointName</a> (joint_name)</td></tr>
+<tr class="memdesc:ab0aba4f9c409ef7101d42a5ad8c42fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">For joint names that refer to joints that are symmetrical (<em>left</em> or <em>right</em>), get the name of the another joint.  <a href="#ab0aba4f9c409ef7101d42a5ad8c42fc7">More...</a><br /></td></tr>
+<tr class="separator:ab0aba4f9c409ef7101d42a5ad8c42fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4992249335ca6c953a6c4dff8f2d64"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevelma__common_1_1velma__interface.html#a3e4992249335ca6c953a6c4dff8f2d64">symmetricalConfiguration</a> (q_map)</td></tr>
+<tr class="memdesc:a3e4992249335ca6c953a6c4dff8f2d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get configuration based on the input configuration such that all joint positions are symmetrical.  <a href="#a3e4992249335ca6c953a6c4dff8f2d64">More...</a><br /></td></tr>
+<tr class="separator:a3e4992249335ca6c953a6c4dff8f2d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86720b8209cbab55e220a545ace4245a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevelma__common_1_1velma__interface.html#a86720b8209cbab55e220a545ace4245a">isConfigurationClose</a> (q_map1, q_map2, tolerance=0.1, allow_subset=False)</td></tr>
+<tr class="memdesc:a86720b8209cbab55e220a545ace4245a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two configurations of robot body are close within tolerance.  <a href="#a86720b8209cbab55e220a545ace4245a">More...</a><br /></td></tr>
+<tr class="separator:a86720b8209cbab55e220a545ace4245a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadc90a017adb16c71308e7a75da786d0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevelma__common_1_1velma__interface.html#aadc90a017adb16c71308e7a75da786d0">isHeadConfigurationClose</a> (q1, q2, tolerance=0.1)</td></tr>
 <tr class="memdesc:aadc90a017adb16c71308e7a75da786d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two configurations of robot neck are close within tolerance.  <a href="#aadc90a017adb16c71308e7a75da786d0">More...</a><br /></td></tr>
 <tr class="separator:aadc90a017adb16c71308e7a75da786d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -89,8 +95,37 @@ Functions</h2></td></tr>
 <tr class="separator:abc493c2d05a8cda5312f647e64ecdfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a4d1c4df049cb18ddb6008037ed8412c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d1c4df049cb18ddb6008037ed8412c0">&#9670;&nbsp;</a></span>isConfigurationClose()</h2>
+<a id="ab0aba4f9c409ef7101d42a5ad8c42fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0aba4f9c409ef7101d42a5ad8c42fc7">&#9670;&nbsp;</a></span>getSymmetricalJointName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def velma_common.velma_interface.getSymmetricalJointName </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>joint_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For joint names that refer to joints that are symmetrical (<em>left</em> or <em>right</em>), get the name of the another joint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joint_name</td><td>string: name of joint.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>name of the joint symmetrical to joint_name, or None, if such does not exist. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00064">64</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+
+</div>
+</div>
+<a id="a86720b8209cbab55e220a545ace4245a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86720b8209cbab55e220a545ace4245a">&#9670;&nbsp;</a></span>isConfigurationClose()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -111,7 +146,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>tolerance</em> = <code>0.1</code>&#160;</td>
+          <td class="paramname"><em>tolerance</em> = <code>0.1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>allow_subset</em> = <code>False</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -137,7 +178,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00056">56</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00097">97</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -183,7 +224,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if two configurations are close within tolerance (for every joint), False otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00089">89</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00132">132</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -229,7 +270,36 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if two configurations are close within tolerance (for every joint), False otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00078">78</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00121">121</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+
+</div>
+</div>
+<a id="a3e4992249335ca6c953a6c4dff8f2d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4992249335ca6c953a6c4dff8f2d64">&#9670;&nbsp;</a></span>symmetricalConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def velma_common.velma_interface.symmetricalConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>q_map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get configuration based on the input configuration such that all joint positions are symmetrical. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q_map</td><td>Dictionary: configuration {joint_name:joint_position}.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Dictionary with symmetrical configuration. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00079">79</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>

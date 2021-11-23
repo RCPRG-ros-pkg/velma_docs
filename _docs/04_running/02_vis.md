@@ -14,7 +14,7 @@ This section contains information about various tools for visualization of Velma
 
 **Command**
 ```bash
-rosrun rqt_agent rqt_agent
+rosrun rqt_agent rqt_agent.py
 ```
 
 **Description**
@@ -37,7 +37,7 @@ This script works with a running control system only.
 
 **Command**
 ```bash
-rosrun rqt_velma rqt_velma
+rosrun rqt_velma rqt_velma.py
 ```
 
 **Description**
@@ -103,7 +103,7 @@ This script works with both a running control system and [urdf description test]
 ![]({{ site.baseurl }}/images/velma_show_camera_frustum.png)
 
 The launch file `show_kinect_frustum.launch` in package `velma_common`
-executes a script `publish_camera_frustum` in package `rcprg_ros_utils`
+executes a script `publish_camera_frustum.py` in package `rcprg_ros_utils`
 
 
 
@@ -125,7 +125,7 @@ This script works with both a running control system and [urdf description test]
 ![]({{ site.baseurl }}/images/velma_show_joints.png)
 
 The launch file `show_joints.launch` in package `velma_common`
-executes a script `publish_joints_visualization` in package `rcprg_ros_utils`
+executes a script `publish_joints_visualization.py` in package `rcprg_ros_utils`
 
 
 
@@ -152,7 +152,7 @@ This script works with both a running control system and [urdf description test]
 ![]({{ site.baseurl }}/images/velma_show_reachability_range.png)
 
 The launch file `show_reachability_range.launch` in package `velma_common`
-executes a script `reachability_range` in package `rcprg_ros_utils`
+executes a script `reachability_range.py` in package `rcprg_ros_utils`
 
 
 
@@ -174,7 +174,7 @@ It can be moved in *rviz* and its pose (i.e. position and orientation) is printe
 ![]({{ site.baseurl }}/images/pose_int_marker.png)
 
 The launch file: `pose_int_marker.launch` in package `rcprg_ros_utils` executes
-a script `pose_int_marker` in package `rcprg_ros_utils`
+a script `pose_int_marker.py` in package `rcprg_ros_utils`
 
 
 

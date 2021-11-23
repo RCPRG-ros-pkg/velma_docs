@@ -38,7 +38,7 @@ Omission of such cleanup can occasionally cause a deadlock between pair of subsy
 **Command**
 
 ```bash
-rosrun velma_common reset_shm_comm
+rosrun velma_common reset_shm_comm.py
 ```
 
 **Description**
@@ -129,7 +129,7 @@ Some scripts require the [planner node](#planner-for-velma).
 **Example command**
 
 ```bash
-rosrun rcprg_gazebo_utils create_state_snapshot
+rosrun rcprg_gazebo_utils create_state_snapshot.py
 ```
 
 **Description**
@@ -146,7 +146,7 @@ and current working directory is `/home/user/`.
 
 First, we create a snapshot:
 ```bash
-rosrun rcprg_gazebo_utils create_state_snapshot
+rosrun rcprg_gazebo_utils create_state_snapshot.py
 ```
 The above command creates a file `state_snapshot.txt` in the current working directory.
 Then, in Gazebo Client, save the world using *File -> Save world as*.

@@ -83,7 +83,7 @@ This launch file runs octomap server that uses saved octomap. The octomap in off
 **Command**
 
 ```bash
-rosrun velma_common int_markers_cimp
+rosrun velma_common int_markers_cimp.py
 ```
 
 **Description**
@@ -106,7 +106,7 @@ ROS topics for interactive markers are:
 **Example command**
 
 ```bash
-rosrun rcprg_gazebo_utils gazebo_move_object jar_01::link
+rosrun rcprg_gazebo_utils gazebo_move_object.py jar_01::link
 ```
 
 **Description**
