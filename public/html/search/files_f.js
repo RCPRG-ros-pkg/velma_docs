@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['velma_5fcontrol_5fpanel_2epy',['velma_control_panel.py',['../velma__control__panel_8py.html',1,'']]],
   ['velma_5fcontrol_5fpanel_5fwidget_2epy',['velma_control_panel_widget.py',['../velma__control__panel__widget_8py.html',1,'']]],
   ['velma_5fcore_5fcs_2elaunch',['velma_core_cs.launch',['../velma__core__cs_8launch.html',1,'']]],
   ['velma_5fcore_5fve_5fbody_2elaunch',['velma_core_ve_body.launch',['../velma__core__ve__body_8launch.html',1,'']]],

@@ -14,11 +14,11 @@ This section contains information about various tools for visualization of Velma
 
 **Command**
 ```bash
-rosrun rqt_agent rqt_agent.py
+rosrun rqt_agent fabric_control_panel.py
 ```
 
 **Description**
-*rqt_agent* is a GUI tool that shows structure and state of low-level subsystems of the control system.
+*fabric_control_panel.py* is a GUI tool that shows structure and state of low-level subsystems of the control system.
 It can be use to examine, for each subsystem:
  * structure of FSM (button *FSM graph*),
  * the current state of FSM and behaviour,
@@ -37,11 +37,11 @@ This script works with a running control system only.
 
 **Command**
 ```bash
-rosrun rqt_velma rqt_velma.py
+rosrun rqt_velma velma_control_panel.py
 ```
 
 **Description**
-*rqt_velma* is a GUI tool that shows state of Velma robot and allows execution of some simple commands:
+*velma_control_panel.py* is a GUI tool that shows state of Velma robot and allows execution of some simple commands:
  * initialize robot
  * enable motors
  * switch to one of normalOperation substates: cartesianImpedance, jointImpedance, relax

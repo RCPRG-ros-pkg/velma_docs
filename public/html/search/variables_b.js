@@ -1,7 +1,7 @@
 var searchData=
 [
   ['m_5fid',['m_id',['../namespacescripts_1_1publish__camera__frustum.html#a54b520d3ef47dcae4ce382314e76ef87',1,'scripts.publish_camera_frustum.m_id()'],['../namespacescripts_1_1publish__joints__visualization.html#af9cd0db51e2e323b469696323f9b165b',1,'scripts.publish_joints_visualization.m_id()'],['../namespacescripts_1_1reachability__range.html#a6941a817a5abfae6d8af5c7174c26561',1,'scripts.reachability_range.m_id()']]],
-  ['main',['main',['../namespacerqt__velma.html#a637e5b84f4e23aded4343acd21e67614',1,'rqt_velma.main()'],['../namespacerqt__agent.html#a1a687c54a87f649f82626fa33a4d22e2',1,'rqt_agent.main()']]],
+  ['main',['main',['../namespacevelma__control__panel.html#aa6b777b971ff29d345f5b41eb4ca6f22',1,'velma_control_panel.main()'],['../namespacefabric__control__panel.html#ab15486a3e4af378cdfca8f9d8d2c38bf',1,'fabric_control_panel.main()']]],
   ['marker_5fnamespace',['marker_namespace',['../namespacescripts_1_1reachability__range.html#af29d29f5a029b62b2f773bccadcfcbb1',1,'scripts::reachability_range']]],
   ['marker_5fstate',['marker_state',['../classscripts_1_1int__markers__cimp_1_1IntMarkersCimp.html#aa0baf6cb507420d7fa8a4f0e06b0018a',1,'scripts::int_markers_cimp::IntMarkersCimp']]],
   ['max_5fz',['max_z',['../namespacescripts_1_1publish__camera__frustum.html#aa2811002b54c21919f311e95dd8a1c24',1,'scripts::publish_camera_frustum']]],

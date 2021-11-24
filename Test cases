@@ -18,14 +18,14 @@ Run the system in simulated world with RoCo environment:
 roslaunch roko_nodes velma_system_roko.launch world_name:=worlds/simple.world
 Wait until the simulated system is fully initialized.
 Run the control panel of Velma:
-rosrun rqt_velma rqt_velma.py
+rosrun rqt_velma velma_control_panel.py
 In the control panel click "Initialize Robot" button.
 Then click "Move to the initial configuration" button.
 
 Recommended:
 roslaunch rcprg_gazebo_utils gazebo_client.launch
 rosrun rviz rviz
-rosrun rqt_agent rqt_agent.py
+rosrun rqt_agent fabric_control_panel.py
 
 PROC_RUN_VELMA_HW
 Turn on power supply.

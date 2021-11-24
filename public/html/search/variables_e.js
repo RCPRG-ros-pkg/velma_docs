@@ -10,7 +10,7 @@ var searchData=
   ['pi',['pi',['../namespacescripts_1_1test__jimp__planning.html#a4f13f5406ee5c1d4768db094a63742db',1,'scripts::test_jimp_planning']]],
   ['pl',['pl',['../namespacescripts_1_1publish__joints__visualization.html#a67c0f5bfc2f2c322a82f87a90d39a804',1,'scripts::publish_joints_visualization']]],
   ['plan_5fservice',['plan_service',['../classrcprg__planner_1_1rcprg__planner_1_1Planner.html#a402f75b7609268d3400dc92ae23076bd',1,'rcprg_planner::rcprg_planner::Planner']]],
-  ['plugin',['plugin',['../namespacerqt__velma.html#a1c2dcfc00d4feabd3f39473b27ac7d70',1,'rqt_velma.plugin()'],['../namespacerqt__agent.html#aebfd21ccaa23df07eb7aed8bf7de1f6f',1,'rqt_agent.plugin()']]],
+  ['plugin',['plugin',['../namespacevelma__control__panel.html#ad8551873316ac7a117899637b1591e7c',1,'velma_control_panel.plugin()'],['../namespacefabric__control__panel.html#a798b7948204f259c17cf803e4f2d006b',1,'fabric_control_panel.plugin()']]],
   ['pm',['pm',['../namespacescripts_1_1object__manipulation__hardware.html#a56073c50c6be93fc375ef99ca6f95dd3',1,'scripts::object_manipulation_hardware']]],
   ['points_5flist',['points_list',['../classscripts_1_1int__markers__jimp_1_1IntMarkersJimp.html#afbd41284365531fbd14b298716ce3995',1,'scripts.int_markers_jimp.IntMarkersJimp.points_list()'],['../namespacescripts_1_1publish__joints__visualization.html#a38652c28861498be7dafa2bd063a472c',1,'scripts.publish_joints_visualization.points_list()']]],
   ['pos',['pos',['../namespacescripts_1_1odom__localization.html#aae6bfa76c92fe218b73ea7700ff1d8d5',1,'scripts::odom_localization']]],
