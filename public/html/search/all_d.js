@@ -1,7 +1,9 @@
 var searchData=
 [
   ['m_5fid',['m_id',['../namespacescripts_1_1publish__camera__frustum.html#a54b520d3ef47dcae4ce382314e76ef87',1,'scripts.publish_camera_frustum.m_id()'],['../namespacescripts_1_1publish__joints__visualization.html#af9cd0db51e2e323b469696323f9b165b',1,'scripts.publish_joints_visualization.m_id()'],['../namespacescripts_1_1reachability__range.html#a6941a817a5abfae6d8af5c7174c26561',1,'scripts.reachability_range.m_id()']]],
-  ['main',['main',['../namespacevelma__control__panel.html#aa6b777b971ff29d345f5b41eb4ca6f22',1,'velma_control_panel.main()'],['../namespacefabric__control__panel.html#ab15486a3e4af378cdfca8f9d8d2c38bf',1,'fabric_control_panel.main()']]],
+  ['m_5flim_5flo',['m_lim_lo',['../classvelma__kinematics_1_1velma__ik__geom_1_1KinematicsSolverLWR4.html#a2be391f4d49903db14185983d0b2a9f4',1,'velma_kinematics::velma_ik_geom::KinematicsSolverLWR4']]],
+  ['m_5flim_5fup',['m_lim_up',['../classvelma__kinematics_1_1velma__ik__geom_1_1KinematicsSolverLWR4.html#a0bb074a3daad046d0320ef7d5012c633',1,'velma_kinematics::velma_ik_geom::KinematicsSolverLWR4']]],
+  ['main',['main',['../namespacevelma__control__panel.html#aa6b777b971ff29d345f5b41eb4ca6f22',1,'velma_control_panel.main()'],['../namespacefabric__control__panel.html#ab15486a3e4af378cdfca8f9d8d2c38bf',1,'fabric_control_panel.main()'],['../namespacetest__velma__ik__geom.html#a0be5f0c95e657dc83fa2e7ea65c3e126',1,'test_velma_ik_geom.main()']]],
   ['makewrench',['makeWrench',['../namespacescripts_1_1int__markers__cimp.html#ae02cb685a0bbc82af5f83c244423a0b4',1,'scripts.int_markers_cimp.makeWrench()'],['../namespacescripts_1_1test__cimp__imp.html#ae0015727d27a18a052b381afbab1ced0',1,'scripts.test_cimp_imp.makeWrench()']]],
   ['marker_5fnamespace',['marker_namespace',['../namespacescripts_1_1reachability__range.html#af29d29f5a029b62b2f773bccadcfcbb1',1,'scripts::reachability_range']]],
   ['marker_5fpublisher_2epy',['marker_publisher.py',['../marker__publisher_8py.html',1,'']]],

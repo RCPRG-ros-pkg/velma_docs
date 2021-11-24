@@ -15,6 +15,15 @@ Integration tests are presented in module @ref integration_tests and they can be
 
 Additionally, @ref utilities provide useful scripts and ROS launch files.
 
+# Classes
+
+The most importatnt classes are:
+ * velma_common.velma_interface.VelmaInterface - for controlling the robot
+ * velma_kinematics.velma_ik_geom.KinematicsSolverVelma -- for calculating forward and inverse kinematics
+ * rcprg_planner.rcprg_planner.OctomapListener - for getting occupancy map of the environment
+ * rcprg_planner.rcprg_planner.Planner - for geometric planning
+ * rcprg_ros_utils.marker_publisher.MarkerPublisher - for publishing ROS rviz markers
+
 # Installation
 Please follow the steps described in page [Set up: Velma](https://github.com/RCPRG-ros-pkg/RCPRG_rosinstall/wiki/Velma).
 

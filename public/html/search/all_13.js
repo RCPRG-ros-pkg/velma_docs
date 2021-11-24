@@ -78,6 +78,7 @@ var searchData=
   ['stop',['stop',['../classscripts_1_1test__jimp__planning__attached_1_1MarkerPublisherThread.html#aab4ff552d83eba7d52d33c195c519327',1,'scripts::test_jimp_planning_attached::MarkerPublisherThread']]],
   ['stop_5fmonitoring',['stop_monitoring',['../classrqt__agent_1_1topic__info_1_1TopicInfo.html#aefdcb231caf43236353ca69ba8dc951b',1,'rqt_agent::topic_info::TopicInfo']]],
   ['stop_5fthread',['stop_thread',['../classscripts_1_1test__jimp__planning__attached_1_1MarkerPublisherThread.html#ae4e39369d6f0d9c1e92666f969884988',1,'scripts::test_jimp_planning_attached::MarkerPublisherThread']]],
+  ['strframe',['strFrame',['../namespacetest__velma__ik__geom.html#ac0603a17b7322dc9a93736f6d4bfe87f',1,'test_velma_ik_geom']]],
   ['structure_5fchanged',['structure_changed',['../classrqt__agent_1_1system__widget_1_1SystemWidget.html#a34ea7ee7ec234ab6d50048003e87f258',1,'rqt_agent::system_widget::SystemWidget']]],
   ['structure_5fgraph',['structure_graph',['../classrqt__agent_1_1system__widget_1_1SystemWidget.html#a584bc7e4dcaede8ab1bbe51b29d33824',1,'rqt_agent::system_widget::SystemWidget']]],
   ['structure_5froot',['structure_root',['../classrqt__agent_1_1system__widget_1_1SystemWidget.html#a3b1a106971e062e85de9a6dada9301c6',1,'rqt_agent::system_widget::SystemWidget']]],

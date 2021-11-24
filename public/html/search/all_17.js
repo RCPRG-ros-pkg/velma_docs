@@ -19,5 +19,6 @@ var searchData=
   ['wheelevent',['wheelEvent',['../classrqt__agent_1_1behavior__graph_1_1GraphView.html#a315eea923fb2d04e92fa19e537ed8961',1,'rqt_agent.behavior_graph.GraphView.wheelEvent()'],['../classrqt__agent_1_1fsm__graph_1_1GraphView.html#a3ff07d0e08e3d9a7c0b89c72f871e113',1,'rqt_agent.fsm_graph.GraphView.wheelEvent()']]],
   ['width',['width',['../classrqt__agent_1_1behavior__graph_1_1BehaviorGraphDialog.html#a631d3ce2f2553e63a29a36be7bb822a7',1,'rqt_agent.behavior_graph.BehaviorGraphDialog.width()'],['../classrqt__agent_1_1fsm__graph_1_1StateMachineGraphDialog.html#a0e98072bc7d69b7afe9b0f4bc04fe9e9',1,'rqt_agent.fsm_graph.StateMachineGraphDialog.width()']]],
   ['workspace_5ftool_2elaunch',['workspace_tool.launch',['../workspace__tool_8launch.html',1,'']]],
-  ['world_5fprop',['world_prop',['../namespacescripts_1_1create__state__snapshot.html#a37457abbeb0564589a7f44b2bbb89a43',1,'scripts::create_state_snapshot']]]
+  ['world_5fprop',['world_prop',['../namespacescripts_1_1create__state__snapshot.html#a37457abbeb0564589a7f44b2bbb89a43',1,'scripts::create_state_snapshot']]],
+  ['wrapangle',['wrapAngle',['../namespacevelma__kinematics_1_1velma__ik__geom.html#a2d41b0a873ad3463af9f3ec072f14316',1,'velma_kinematics::velma_ik_geom']]]
 ];

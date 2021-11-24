@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['velma_5fkinematics',['velma_kinematics',['../md_velma_system_velma_kinematics_README.html',1,'']]],
   ['velma_5flwr_5fsim',['velma_lwr_sim',['../md_velma_system_velma_lwr_sim_README.html',1,'']]],
   ['velma_5fsim',['velma_sim',['../md_velma_system_velma_sim_README.html',1,'']]],
   ['value',['value',['../classsubsystem__common_1_1subsystem__diag_1_1SubsystemDiag_1_1PredicateValue.html#a23154156e83cc7f2a7983e6aaeb74a5a',1,'subsystem_common::subsystem_diag::SubsystemDiag::PredicateValue']]],
@@ -14,8 +15,11 @@ var searchData=
   ['velma_5fcore_5fcs',['velma_core_cs',['../velma_core_cs_readme.html',1,'']]],
   ['velma_5fcore_5fve_5fbody_2elaunch',['velma_core_ve_body.launch',['../velma__core__ve__body_8launch.html',1,'']]],
   ['velma_5fcore_5fve_5fbody',['velma_core_ve_body',['../velma_core_ve_body_readme.html',1,'']]],
+  ['velma_5fik_5fgeom',['velma_ik_geom',['../namespacevelma__kinematics_1_1velma__ik__geom.html',1,'velma_kinematics']]],
+  ['velma_5fik_5fgeom_2epy',['velma_ik_geom.py',['../velma__ik__geom_8py.html',1,'']]],
   ['velma_5finterface',['velma_interface',['../namespacevelma__common_1_1velma__interface.html',1,'velma_common']]],
   ['velma_5finterface_2epy',['velma_interface.py',['../velma__interface_8py.html',1,'']]],
+  ['velma_5fkinematics',['velma_kinematics',['../namespacevelma__kinematics.html',1,'']]],
   ['velma_5flook_5fat_5faction_5fserver_2epy',['velma_look_at_action_server.py',['../velma__look__at__action__server_8py.html',1,'']]],
   ['velma_5fplanner_2elaunch',['velma_planner.launch',['../velma__planner_8launch.html',1,'']]],
   ['velma_5fsim_5fre_2elaunch',['velma_sim_re.launch',['../velma__sim__re_8launch.html',1,'']]],

@@ -15,5 +15,6 @@ var searchData=
   ['waitforlookat',['waitForLookAt',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a41be093acb2d6c36b522c7e34c048431',1,'velma_common::velma_interface::VelmaInterface']]],
   ['waitformotor',['waitForMotor',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#ae8d3b6221dfe969dff4ccb31a56b7fc5',1,'velma_common::velma_interface::VelmaInterface']]],
   ['waitfort',['waitForT',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a2a03862f7bdb1ca3a86dadf597151cd4',1,'velma_common::velma_interface::VelmaInterface']]],
-  ['wheelevent',['wheelEvent',['../classrqt__agent_1_1behavior__graph_1_1GraphView.html#a315eea923fb2d04e92fa19e537ed8961',1,'rqt_agent.behavior_graph.GraphView.wheelEvent()'],['../classrqt__agent_1_1fsm__graph_1_1GraphView.html#a3ff07d0e08e3d9a7c0b89c72f871e113',1,'rqt_agent.fsm_graph.GraphView.wheelEvent()']]]
+  ['wheelevent',['wheelEvent',['../classrqt__agent_1_1behavior__graph_1_1GraphView.html#a315eea923fb2d04e92fa19e537ed8961',1,'rqt_agent.behavior_graph.GraphView.wheelEvent()'],['../classrqt__agent_1_1fsm__graph_1_1GraphView.html#a3ff07d0e08e3d9a7c0b89c72f871e113',1,'rqt_agent.fsm_graph.GraphView.wheelEvent()']]],
+  ['wrapangle',['wrapAngle',['../namespacevelma__kinematics_1_1velma__ik__geom.html#a2d41b0a873ad3463af9f3ec072f14316',1,'velma_kinematics::velma_ik_geom']]]
 ];
