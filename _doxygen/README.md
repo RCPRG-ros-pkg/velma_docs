@@ -1,4 +1,4 @@
-WUT Velma Python interfaces                         {#mainpage}
+WUT Velma robot API                         {#mainpage}
 ============
 
 # Introduction

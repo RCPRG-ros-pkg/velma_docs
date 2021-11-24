@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wut_20velma_20python_20interfaces',['WUT Velma Python interfaces',['../index.html',1,'']]]
+  ['wut_20velma_20robot_20api',['WUT Velma robot API',['../index.html',1,'']]]
 ];

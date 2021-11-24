@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wut_20velma_20python_20interfaces',['WUT Velma Python interfaces',['../index.html',1,'']]],
+  ['wut_20velma_20robot_20api',['WUT Velma robot API',['../index.html',1,'']]],
   ['waitforeffector',['waitForEffector',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#aa4473590a8242f71aad71c4f369b714c',1,'velma_common::velma_interface::VelmaInterface']]],
   ['waitforeffectorleft',['waitForEffectorLeft',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#aed5cb6b7fd62c004dca2359778e18486',1,'velma_common::velma_interface::VelmaInterface']]],
   ['waitforeffectorright',['waitForEffectorRight',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a545235e0845e85d171c37c9e8dae796e',1,'velma_common::velma_interface::VelmaInterface']]],

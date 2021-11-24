@@ -1,7 +1,7 @@
 ---
 title: Behaviors of core agent
 category: Specification
-order: 3
+order: 4
 brief: Specification of behaviors of subsystems of core agent.
 ---
 
@@ -106,53 +106,53 @@ state transition is $$\scriptsize \sigma_{\texttt{idle},\texttt{safe}} = \texttt
 
 Error condition is the same for all states except *idle*:
 
-$$\scriptsize \epsilon_{\texttt{safe}} = \epsilon_{\texttt{safe_col}} = \epsilon_{\texttt{cart_imp}} = \epsilon_{\texttt{jnt_imp}} = \neg \texttt{CURRENT_BEHAVIOR_OK} \vee \neg \texttt{veBodyStatusValid} \vee \texttt{veBodyInSafeState} $$
+$$\scriptsize \epsilon_{\texttt{safe}} = \epsilon_{\texttt{relax}} = \epsilon_{\texttt{cart_imp}} = \epsilon_{\texttt{jnt_imp}} = \neg \texttt{CURRENT_BEHAVIOR_OK} \vee \neg \texttt{veBodyStatusValid} \vee \texttt{veBodyInSafeState} $$
 
 as well as the next state:
 
-$$\scriptsize \sigma_{\texttt{safe},\texttt{idle}} = \sigma_{\texttt{safe_col},\texttt{idle}} = \sigma_{\texttt{cart_imp},\texttt{idle}} = \sigma_{\texttt{jnt_imp},\texttt{idle}} = \texttt{IN_ERROR} $$
+$$\scriptsize \sigma_{\texttt{safe},\texttt{idle}} = \sigma_{\texttt{relax},\texttt{idle}} = \sigma_{\texttt{cart_imp},\texttt{idle}} = \sigma_{\texttt{jnt_imp},\texttt{idle}} = \texttt{IN_ERROR} $$
 
 
 The terminal condition and state transition conditions for state *safe* are:
 
-$$\scriptsize \tau_{\texttt{safe}} = \texttt{recvOneCmd} \wedge ((( \texttt{recvCartImpCmd} \vee \texttt{recvJntImpCmd} ) \wedge \neg \texttt{inSelfCollision} ) \vee \texttt{recvSafeColCmd} ) \wedge \texttt{motorsReady} $$
+$$\scriptsize \tau_{\texttt{safe}} = \texttt{recvOneCmd} \wedge ((( \texttt{recvCartImpCmd} \vee \texttt{recvJntImpCmd} ) \wedge \neg \texttt{inSelfCollision} ) \vee \texttt{recvRelaxCmd} ) \wedge \texttt{motorsReady} $$
 
 $$\scriptsize \sigma_{\texttt{safe},\texttt{cart_imp}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvCartImpCmd} $$
 
 $$\scriptsize \sigma_{\texttt{safe},\texttt{jnt_imp}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvJntImpCmd} $$
 
-$$\scriptsize \sigma_{\texttt{safe},\texttt{safe_col}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvSafeColCmd} $$
+$$\scriptsize \sigma_{\texttt{safe},\texttt{relax}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvRelaxCmd} $$
 
 
-The terminal condition and state transition conditions for state *safe_col* are:
+The terminal condition and state transition conditions for state *relax* are:
 
-$$\scriptsize \tau_{\texttt{safe_col}} = \texttt{recvOneCmd} \wedge ( \texttt{recvCartImpCmd} \vee \texttt{recvJntImpCmd} ) \wedge \neg \texttt{inSelfCollision} $$
+$$\scriptsize \tau_{\texttt{relax}} = \texttt{recvOneCmd} \wedge ( \texttt{recvCartImpCmd} \vee \texttt{recvJntImpCmd} ) \wedge \neg \texttt{inSelfCollision} $$
 
-$$\scriptsize \sigma_{\texttt{safe_col},\texttt{cart_imp}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvCartImpCmd} $$
+$$\scriptsize \sigma_{\texttt{relax},\texttt{cart_imp}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvCartImpCmd} $$
 
-$$\scriptsize \sigma_{\texttt{safe_col},\texttt{jnt_imp}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvJntImpCmd} $$
+$$\scriptsize \sigma_{\texttt{relax},\texttt{jnt_imp}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvJntImpCmd} $$
 
 
 The terminal condition and state transition conditions for state *cart_imp* are:
 
-$$\scriptsize \tau_{\texttt{cart_imp}} = ( \texttt{recvOneCmd} \wedge ( \texttt{recvJntImpCmd} \vee \texttt{recvSafeColCmd} )) \vee \texttt{inSelfCollision} $$
+$$\scriptsize \tau_{\texttt{cart_imp}} = ( \texttt{recvOneCmd} \wedge ( \texttt{recvJntImpCmd} \vee \texttt{recvRelaxCmd} )) \vee \texttt{inSelfCollision} $$
 
 $$\scriptsize \sigma_{\texttt{cart_imp},\texttt{safe}} = \neg \texttt{IN_ERROR} \wedge \neg \texttt{recvOneCmd} $$
 
 $$\scriptsize \sigma_{\texttt{cart_imp},\texttt{jnt_imp}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvOneCmd} \wedge \texttt{recvJntImpCmd} $$
 
-$$\scriptsize \sigma_{\texttt{cart_imp},\texttt{safe_col}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvOneCmd} \wedge \texttt{recvSafeColCmd}$$ 
+$$\scriptsize \sigma_{\texttt{cart_imp},\texttt{relax}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvOneCmd} \wedge \texttt{recvRelaxCmd}$$ 
 
 
 The terminal condition and state transition conditions for state *jnt_imp* are:
 
-$$\scriptsize \tau_{\texttt{jnt_imp}} = ( \texttt{recvOneCmd} \wedge ( \texttt{recvCartImpCmd} \vee \texttt{recvSafeColCmd} )) \vee \texttt{inSelfCollision} $$
+$$\scriptsize \tau_{\texttt{jnt_imp}} = ( \texttt{recvOneCmd} \wedge ( \texttt{recvCartImpCmd} \vee \texttt{recvRelaxCmd} )) \vee \texttt{inSelfCollision} $$
 
 $$\scriptsize \sigma_{\texttt{jnt_imp},\texttt{safe}} = \neg \texttt{IN_ERROR} \wedge \neg \texttt{recvOneCmd} $$
 
 $$\scriptsize \sigma_{\texttt{jnt_imp},\texttt{cart_imp}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvOneCmd} \wedge \texttt{recvCartImpCmd} $$
 
-$$\scriptsize \sigma_{\texttt{jnt_imp},\texttt{safe_col}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvOneCmd} \wedge \texttt{recvSafeColCmd} $$
+$$\scriptsize \sigma_{\texttt{jnt_imp},\texttt{relax}} = \neg \texttt{IN_ERROR} \wedge \texttt{recvOneCmd} \wedge \texttt{recvRelaxCmd} $$
 
 
 With predicates defined as:
@@ -163,7 +163,7 @@ With predicates defined as:
 * $$\scriptsize \texttt{recvOneCmd}$$ - received exactly on command from *velma_ros_interface* agent,
 * $$\scriptsize \texttt{recvCartImpCmd}$$ - received cartesian impedance command from *velma_ros_interface* agent,
 * $$\scriptsize \texttt{recvJntImpCmd}$$ - received joint impedance command from *velma_ros_interface* agent,
-* $$\scriptsize \texttt{recvSafeColCmd}$$ - received safe self collision avoidance command from *velma_ros_interface* agent,
+* $$\scriptsize \texttt{recvRelaxCmd}$$ - received safe self collision avoidance command from *velma_ros_interface* agent,
 * $$\scriptsize \texttt{inSelfCollision}$$ - the robot is in self collision state,
 * $$\scriptsize \texttt{IN_ERROR}$$ - the state ends with error condition satisfied; this predicate is valid in transition conditions only.
 

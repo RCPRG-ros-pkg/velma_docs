@@ -3,18 +3,18 @@ digraph graphname {
     agent_a [style=filled shape=box style=rounded label = "planner"];
     agent_b [style=filled shape=box style=rounded label = "octomap"];
     agent_c [style=filled shape=box style=rounded label = "visual_recognition"];
-    velma_ros_interface [style=filled shape=box style=rounded label = "velma_ros_interface"];
-    {rank=sink velma_core [style=filled shape=box style=rounded label = "velma_core"];}
+    ros_interface [style=filled shape=box style=rounded label = "ros_interface"];
+    {rank=sink core [style=filled shape=box style=rounded label = "core"];}
 
-    velma_ros_interface -> velma_core;
-    velma_core -> velma_ros_interface;
-    velma_core -> agent_b;
-    velma_core -> agent_c;
+    ros_interface -> core;
+    core -> ros_interface;
+    ros_interface -> agent_b;
+    ros_interface -> agent_c;
 
     task -> agent_a;
 
-    velma_ros_interface -> task;
-    task -> velma_ros_interface;
+    ros_interface -> task;
+    task -> ros_interface;
 
     agent_a -> task;
     agent_b -> task;
