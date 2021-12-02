@@ -101,6 +101,27 @@ ROS topics for interactive markers are:
 
 
 
+# Moving the whole body using interactive markers
+
+**Command**
+
+```bash
+rosrun velma_common int_markers_jimp.py
+```
+
+**Description**
+
+This script publishes interactive 1 DOF markers that can be used inside *rviz* to move joints of Velma.
+ROS topic for this interactive marker is `/int_markers_jimp/update`
+
+![]({{ site.baseurl }}/images/velma_int_markers_jimp.png)
+
+
+
+
+
+
+
 # Moving an object in Gazebo using interactive 6 DOF marker
 
 **Example command**
