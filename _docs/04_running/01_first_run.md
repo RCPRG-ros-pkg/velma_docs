@@ -15,7 +15,7 @@ source <path_to_ws_velma_os>/devel/setup.bash
 (when built from sources)
 or
 ```bash
-source /opt/ws_valma_os/setup.bash
+source /opt/ws_velma_os/setup.bash
 ```
 (when installed from a package).
 
