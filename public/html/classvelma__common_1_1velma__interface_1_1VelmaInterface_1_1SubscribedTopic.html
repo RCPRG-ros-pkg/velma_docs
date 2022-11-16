@@ -76,8 +76,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25c894df2c5ead6f6608790faefa52e6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1SubscribedTopic.html#a25c894df2c5ead6f6608790faefa52e6">__init__</a> (self, topic_name, topic_type)</td></tr>
-<tr class="separator:a25c894df2c5ead6f6608790faefa52e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd30b2057ea820c3349fac6d678a166"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1SubscribedTopic.html#afdd30b2057ea820c3349fac6d678a166">dbgPrint</a> (self, s)</td></tr>
+<tr class="separator:afdd30b2057ea820c3349fac6d678a166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81123dd6e81fb61e19c3db7d0f97bcd3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1SubscribedTopic.html#a81123dd6e81fb61e19c3db7d0f97bcd3">__init__</a> (self, topic_name, topic_type, debug=False)</td></tr>
+<tr class="separator:a81123dd6e81fb61e19c3db7d0f97bcd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac79ef38480f912f7f9dae992112c09a3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1SubscribedTopic.html#ac79ef38480f912f7f9dae992112c09a3">getData</a> (self, timeout_s=None)</td></tr>
 <tr class="memdesc:ac79ef38480f912f7f9dae992112c09a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the newest topic data.  <a href="#ac79ef38480f912f7f9dae992112c09a3">More...</a><br /></td></tr>
 <tr class="separator:ac79ef38480f912f7f9dae992112c09a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,10 +92,10 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class used for subscription for various ROS topics from the <a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html" title="ROS-based, Python interface class for WUT Velma Robot. ">VelmaInterface</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00754">754</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00861">861</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a25c894df2c5ead6f6608790faefa52e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25c894df2c5ead6f6608790faefa52e6">&#9670;&nbsp;</a></span>__init__()</h2>
+<a id="a81123dd6e81fb61e19c3db7d0f97bcd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81123dd6e81fb61e19c3db7d0f97bcd3">&#9670;&nbsp;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -114,7 +116,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>topic_type</em>&#160;</td>
+          <td class="paramname"><em>topic_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>debug</em> = <code>False</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -124,11 +132,41 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00760">760</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00872">872</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="afdd30b2057ea820c3349fac6d678a166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd30b2057ea820c3349fac6d678a166">&#9670;&nbsp;</a></span>dbgPrint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def velma_common.velma_interface.VelmaInterface.SubscribedTopic.dbgPrint </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00867">867</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+
+</div>
+</div>
 <a id="ac79ef38480f912f7f9dae992112c09a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac79ef38480f912f7f9dae992112c09a3">&#9670;&nbsp;</a></span>getData()</h2>
 
@@ -164,7 +202,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns the newest data read on topic if it is available, or None otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00770">770</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00884">884</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -181,7 +219,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00764">764</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00877">877</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>

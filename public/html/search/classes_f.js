@@ -6,5 +6,6 @@ var searchData=
   ['velmainitthread',['VelmaInitThread',['../classrqt__velma_1_1velma__control__panel__widget_1_1VelmaInitThread.html',1,'rqt_velma::velma_control_panel_widget']]],
   ['velmainterface',['VelmaInterface',['../classvelma__common_1_1velma__interface_1_1VelmaInterface.html',1,'velma_common::velma_interface']]],
   ['velmalookataction',['VelmaLookAtAction',['../classscripts_1_1velma__look__at__action__server_1_1VelmaLookAtAction.html',1,'scripts::velma_look_at_action_server']]],
+  ['velmaworkspace',['VelmaWorkspace',['../classvelma__kinematics_1_1velma__workspace_1_1VelmaWorkspace.html',1,'velma_kinematics::velma_workspace']]],
   ['visualmesh',['VisualMesh',['../classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1VisualMesh.html',1,'velma_common::velma_interface::VelmaInterface']]]
 ];

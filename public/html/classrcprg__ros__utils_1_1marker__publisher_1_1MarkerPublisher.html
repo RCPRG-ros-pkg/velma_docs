@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classrcprg__ros__utils_1_1marker__publisher_1_1MarkerPublisher-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">rcprg_ros_utils.marker_publisher.MarkerPublisher Class Reference</div>  </div>
@@ -79,6 +80,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a615ac4b7c5465972a2f843797ffc131a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1e0ed06a74d138b46aca1db2929b76"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__ros__utils_1_1marker__publisher_1_1MarkerPublisher.html#a5d1e0ed06a74d138b46aca1db2929b76">publishAll</a> (self)</td></tr>
 <tr class="separator:a5d1e0ed06a74d138b46aca1db2929b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728114375f0af5370f61553643f36c2a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__ros__utils_1_1marker__publisher_1_1MarkerPublisher.html#a728114375f0af5370f61553643f36c2a">getPendingMarkersCount</a> (self)</td></tr>
+<tr class="separator:a728114375f0af5370f61553643f36c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a408a38d0c42c281bcdf47a0cbf38a0e2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__ros__utils_1_1marker__publisher_1_1MarkerPublisher.html#a408a38d0c42c281bcdf47a0cbf38a0e2">publishTextMarker</a> (self, text, i, r=1, g=0, b=0, a=1, namespace='default', frame_id='torso_base', T=None, height=0.1)</td></tr>
 <tr class="separator:a408a38d0c42c281bcdf47a0cbf38a0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2470825a3ef8f73c4aa19e9504ef0e09"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__ros__utils_1_1marker__publisher_1_1MarkerPublisher.html#a2470825a3ef8f73c4aa19e9504ef0e09">publishSinglePointMarker</a> (self, pt, i, r=1, g=0, b=0, a=1, namespace='default', frame_id='torso_base', m_type=Marker.CUBE, scale=Vector3(0.005, 0.005, 0.005), T=None)</td></tr>
@@ -109,6 +112,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac2207efc9cbba13f5452d0fd688d4246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af79ffcc092349cd2c2f53cf5c021f820"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__ros__utils_1_1marker__publisher_1_1MarkerPublisher.html#af79ffcc092349cd2c2f53cf5c021f820">publishMeshMarker</a> (self, mesh, base_id, r=1, g=0, b=0, scale=0.1, frame_id='torso_base', namespace='default', T=None)</td></tr>
 <tr class="separator:af79ffcc092349cd2c2f53cf5c021f820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9029d2a1d1c69f54a81e3ecf05b8050d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__ros__utils_1_1marker__publisher_1_1MarkerPublisher.html#a9029d2a1d1c69f54a81e3ecf05b8050d">createSinglePointMarker</a> (pt, i, r=1, g=0, b=0, a=1, namespace='default', frame_id='torso_base', m_type=Marker.CUBE, scale=Vector3(0.005, 0.005, 0.005), T=None)</td></tr>
+<tr class="separator:a9029d2a1d1c69f54a81e3ecf05b8050d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24956a35944486986f322e6b0dda12b4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__ros__utils_1_1marker__publisher_1_1MarkerPublisher.html#a24956a35944486986f322e6b0dda12b4">createVectorMarker</a> (v1, v2, i, r, g, b, a=0.5, frame='torso_base', namespace='default', scale=0.001)</td></tr>
+<tr class="separator:a24956a35944486986f322e6b0dda12b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36988562a092600b4c1666b80f2baeb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__ros__utils_1_1marker__publisher_1_1MarkerPublisher.html#ab36988562a092600b4c1666b80f2baeb">createFrameMarker</a> (T, base_id, scale=0.1, frame='torso_base', namespace='default')</td></tr>
+<tr class="separator:ab36988562a092600b4c1666b80f2baeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is an interface to ROS markers publisher. </p>
@@ -196,7 +208,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00292">292</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00334">334</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -286,7 +298,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00089">89</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00111">111</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -370,7 +382,241 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00271">271</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00297">297</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+
+</div>
+</div>
+<a id="ab36988562a092600b4c1666b80f2baeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab36988562a092600b4c1666b80f2baeb">&#9670;&nbsp;</a></span>createFrameMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rcprg_ros_utils.marker_publisher.MarkerPublisher.createFrameMarker </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>T</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>base_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>scale</em> = <code>0.1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>frame</em> = <code>'torso_base'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>namespace</em> = <code>'default'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00341">341</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+
+</div>
+</div>
+<a id="a9029d2a1d1c69f54a81e3ecf05b8050d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9029d2a1d1c69f54a81e3ecf05b8050d">&#9670;&nbsp;</a></span>createSinglePointMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rcprg_ros_utils.marker_publisher.MarkerPublisher.createSinglePointMarker </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>r</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>g</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>b</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>a</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>namespace</em> = <code>'default'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>frame_id</em> = <code>'torso_base'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>m_type</em> = <code>Marker.CUBE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>scale</em> = <code>Vector3(0.005,&#160;0.005,&#160;0.005)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>T</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00093">93</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+
+</div>
+</div>
+<a id="a24956a35944486986f322e6b0dda12b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24956a35944486986f322e6b0dda12b4">&#9670;&nbsp;</a></span>createVectorMarker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rcprg_ros_utils.marker_publisher.MarkerPublisher.createVectorMarker </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>frame</em> = <code>'torso_base'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>namespace</em> = <code>'default'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>scale</em> = <code>0.001</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00314">314</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -418,7 +664,27 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00108">108</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00132">132</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+
+</div>
+</div>
+<a id="a728114375f0af5370f61553643f36c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a728114375f0af5370f61553643f36c2a">&#9670;&nbsp;</a></span>getPendingMarkersCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rcprg_ros_utils.marker_publisher.MarkerPublisher.getPendingMarkersCount </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00060">60</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -516,7 +782,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00298">298</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00347">347</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -570,7 +836,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00287">287</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00329">329</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -654,7 +920,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00170">170</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00194">194</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -738,7 +1004,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00145">145</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00169">169</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -816,7 +1082,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00319">319</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00368">368</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -906,7 +1172,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00195">195</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00219">219</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -984,7 +1250,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00223">223</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00249">249</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1340,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00083">83</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00086">86</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1424,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00060">60</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00063">63</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -1236,7 +1502,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00245">245</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00271">271</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>
@@ -1320,7 +1586,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00266">266</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="marker__publisher_8py_source.html#l00292">292</a> of file <a class="el" href="marker__publisher_8py_source.html">marker_publisher.py</a>.</p>
 
 </div>
 </div>

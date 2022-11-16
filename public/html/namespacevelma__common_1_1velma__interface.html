@@ -93,6 +93,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abc493c2d05a8cda5312f647e64ecdfa1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevelma__common_1_1velma__interface.html#abc493c2d05a8cda5312f647e64ecdfa1">isHandConfigurationClose</a> (current_q, dest_q, tolerance=0.1)</td></tr>
 <tr class="memdesc:abc493c2d05a8cda5312f647e64ecdfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two configurations of robot hand are close within tolerance.  <a href="#abc493c2d05a8cda5312f647e64ecdfa1">More...</a><br /></td></tr>
 <tr class="separator:abc493c2d05a8cda5312f647e64ecdfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295379e4a1d0d45df0120c539fa0e395"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevelma__common_1_1velma__interface.html#a295379e4a1d0d45df0120c539fa0e395">splitTrajectory</a> (joint_trajectory, max_traj_len)</td></tr>
+<tr class="memdesc:a295379e4a1d0d45df0120c539fa0e395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a long trajectory into a number of shorter trajectories.  <a href="#a295379e4a1d0d45df0120c539fa0e395">More...</a><br /></td></tr>
+<tr class="separator:a295379e4a1d0d45df0120c539fa0e395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ab0aba4f9c409ef7101d42a5ad8c42fc7"></a>
@@ -271,6 +274,46 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if two configurations are close within tolerance (for every joint), False otherwise. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00121">121</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+
+</div>
+</div>
+<a id="a295379e4a1d0d45df0120c539fa0e395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295379e4a1d0d45df0120c539fa0e395">&#9670;&nbsp;</a></span>splitTrajectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def velma_common.velma_interface.splitTrajectory </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>joint_trajectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>max_traj_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Split a long trajectory into a number of shorter trajectories. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joint_trajectory</td><td>trajectory_msgs.msg.JointTrajectory: A joint trajectory to be splitted. </td></tr>
+    <tr><td class="paramname">max_traj_len</td><td>int: Maximum number of nodes in the result trajectory. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns list of trajectory_msgs.msg.JointTrajectory &ndash; the input trajectory split into a number of trajectories of length not greater than max_traj_len. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00146">146</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>

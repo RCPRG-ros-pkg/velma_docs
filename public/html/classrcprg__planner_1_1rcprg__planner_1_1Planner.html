@@ -79,9 +79,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a88db57fe86a00aa6f4f149efa8cf097a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__planner_1_1rcprg__planner_1_1Planner.html#a88db57fe86a00aa6f4f149efa8cf097a">plan</a> (self, q_start, goal_constraints, group_name, attached_collision_objects=None, is_diff=False, path_constraints=None, trajectory_constraints=None, workspace_parameters=None, planner_id=None, num_planning_attempts=1, allowed_planning_time=10.0, max_velocity_scaling_factor=1.0, max_acceleration_scaling_factor=1.0, keep_upright=None)</td></tr>
 <tr class="memdesc:a88db57fe86a00aa6f4f149efa8cf097a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plan motion in joint space.  <a href="#a88db57fe86a00aa6f4f149efa8cf097a">More...</a><br /></td></tr>
 <tr class="separator:a88db57fe86a00aa6f4f149efa8cf097a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa790c2f4e0740ecdf741c37e3a1d719b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__planner_1_1rcprg__planner_1_1Planner.html#aa790c2f4e0740ecdf741c37e3a1d719b">splitTrajectory</a> (self, joint_trajectory, max_traj_len)</td></tr>
-<tr class="memdesc:aa790c2f4e0740ecdf741c37e3a1d719b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a long trajectory into a number of shorter trajectories.  <a href="#aa790c2f4e0740ecdf741c37e3a1d719b">More...</a><br /></td></tr>
-<tr class="separator:aa790c2f4e0740ecdf741c37e3a1d719b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a330d3fef2423f77a2a336274fd5ddd60"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrcprg__planner_1_1rcprg__planner_1_1Planner.html#a330d3fef2423f77a2a336274fd5ddd60">processWorld</a> (self, octomap)</td></tr>
 <tr class="memdesc:a330d3fef2423f77a2a336274fd5ddd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates occupancy map of the planner.  <a href="#a330d3fef2423f77a2a336274fd5ddd60">More...</a><br /></td></tr>
 <tr class="separator:a330d3fef2423f77a2a336274fd5ddd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,7 +99,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class used as planner interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00120">120</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00191">191</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7b2545ec9d561de90f6882694c65c1a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b2545ec9d561de90f6882694c65c1a6">&#9670;&nbsp;</a></span>__init__()</h2>
@@ -138,7 +135,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00329">329</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00389">389</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
 
 </div>
 </div>
@@ -268,7 +265,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns trajectory_msgs.msg.JointTrajectory. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00128">128</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00199">199</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
 
 </div>
 </div>
@@ -307,53 +304,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns True if the octomap was succesfully loaded, False otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00302">302</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
-
-</div>
-</div>
-<a id="aa790c2f4e0740ecdf741c37e3a1d719b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa790c2f4e0740ecdf741c37e3a1d719b">&#9670;&nbsp;</a></span>splitTrajectory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def rcprg_planner.rcprg_planner.Planner.splitTrajectory </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>joint_trajectory</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>max_traj_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Split a long trajectory into a number of shorter trajectories. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">joint_trajectory</td><td>trajectory_msgs.msg.JointTrajectory: A joint trajectory to be splitted. </td></tr>
-    <tr><td class="paramname">max_traj_len</td><td>int: Maximum number of nodes in the result trajectory. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns list of trajectory_msgs.msg.JointTrajectory &ndash; the input trajectory split into a number of trajectories of length not greater than max_traj_len. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00263">263</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00362">362</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
 
 </div>
 </div>
@@ -392,7 +343,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns True if the Python planner interface was succesfully initialized, False otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00338">338</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00398">398</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
 
 </div>
 </div>
@@ -409,7 +360,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00348">348</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00408">408</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
 
 </div>
 </div>
@@ -425,7 +376,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00354">354</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00414">414</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
 
 </div>
 </div>

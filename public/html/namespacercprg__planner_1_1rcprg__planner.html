@@ -84,8 +84,54 @@ Functions</h2></td></tr>
 <tr class="memitem:a9df3f7676b4cdc3b2cca513e52d11da3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacercprg__planner_1_1rcprg__planner.html#a9df3f7676b4cdc3b2cca513e52d11da3">qMapToConstraints</a> (q_map, tolerance=0.01, group=None)</td></tr>
 <tr class="memdesc:a9df3f7676b4cdc3b2cca513e52d11da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function converts dictionary of joint positions to moveit_msgs.Constraints structure.  <a href="#a9df3f7676b4cdc3b2cca513e52d11da3">More...</a><br /></td></tr>
 <tr class="separator:a9df3f7676b4cdc3b2cca513e52d11da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75efac01890ef671157f4c822783a9f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacercprg__planner_1_1rcprg__planner.html#af75efac01890ef671157f4c822783a9f">wrapAngle</a> (angle)</td></tr>
+<tr class="separator:af75efac01890ef671157f4c822783a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906462f634daccd747bdb88d3f3123c4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacercprg__planner_1_1rcprg__planner.html#a906462f634daccd747bdb88d3f3123c4">keepUprightIk</a> (vec_E)</td></tr>
+<tr class="separator:a906462f634daccd747bdb88d3f3123c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e2bdcd3efdc05400873e22014a0b4a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacercprg__planner_1_1rcprg__planner.html#aa6e2bdcd3efdc05400873e22014a0b4a">KDL2str</a> (x)</td></tr>
+<tr class="separator:aa6e2bdcd3efdc05400873e22014a0b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aa6e2bdcd3efdc05400873e22014a0b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e2bdcd3efdc05400873e22014a0b4a">&#9670;&nbsp;</a></span>KDL2str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rcprg_planner.rcprg_planner.KDL2str </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00180">180</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
+
+</div>
+</div>
+<a id="a906462f634daccd747bdb88d3f3123c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906462f634daccd747bdb88d3f3123c4">&#9670;&nbsp;</a></span>keepUprightIk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rcprg_planner.rcprg_planner.keepUprightIk </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>vec_E</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00123">123</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
+
+</div>
+</div>
 <a id="a9df3f7676b4cdc3b2cca513e52d11da3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9df3f7676b4cdc3b2cca513e52d11da3">&#9670;&nbsp;</a></span>qMapToConstraints()</h2>
 
@@ -130,6 +176,26 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Returns filled moveit_msgs.Constraints structure. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00047">47</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
+
+</div>
+</div>
+<a id="af75efac01890ef671157f4c822783a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75efac01890ef671157f4c822783a9f">&#9670;&nbsp;</a></span>wrapAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rcprg_planner.rcprg_planner.wrapAngle </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rcprg__planner_8py_source.html#l00120">120</a> of file <a class="el" href="rcprg__planner_8py_source.html">rcprg_planner.py</a>.</p>
 
 </div>
 </div>

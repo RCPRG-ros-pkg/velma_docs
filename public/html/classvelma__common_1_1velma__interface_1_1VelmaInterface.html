@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classvelma__common_1_1velma__interface_1_1VelmaInterface-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">velma_common.velma_interface.VelmaInterface Class Reference</div>  </div>
@@ -127,9 +128,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ebc8e99736cafaeac7c535a6e6c9516"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a1ebc8e99736cafaeac7c535a6e6c9516">getHeadJointLimits</a> (self)</td></tr>
 <tr class="memdesc:a1ebc8e99736cafaeac7c535a6e6c9516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets limits of joints of neck.  <a href="#a1ebc8e99736cafaeac7c535a6e6c9516">More...</a><br /></td></tr>
 <tr class="separator:a1ebc8e99736cafaeac7c535a6e6c9516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae938a6dbb8db54723832fdba02592463"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#ae938a6dbb8db54723832fdba02592463">__init__</a> (self)</td></tr>
-<tr class="memdesc:ae938a6dbb8db54723832fdba02592463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization of the interface.  <a href="#ae938a6dbb8db54723832fdba02592463">More...</a><br /></td></tr>
-<tr class="separator:ae938a6dbb8db54723832fdba02592463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3558d7513c82facfe58d8d312bbdd4ff"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a3558d7513c82facfe58d8d312bbdd4ff">dbgPrint</a> (self, s)</td></tr>
+<tr class="separator:a3558d7513c82facfe58d8d312bbdd4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4559db40208dfc892693cf97fb9df872"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a4559db40208dfc892693cf97fb9df872">__init__</a> (self, debug=False)</td></tr>
+<tr class="memdesc:a4559db40208dfc892693cf97fb9df872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization of the interface.  <a href="#a4559db40208dfc892693cf97fb9df872">More...</a><br /></td></tr>
+<tr class="separator:a4559db40208dfc892693cf97fb9df872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bd7f02dac98fc532ae984851bcccb98"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a8bd7f02dac98fc532ae984851bcccb98">getCoreVeDiag</a> (self, timeout_s=None)</td></tr>
 <tr class="memdesc:a8bd7f02dac98fc532ae984851bcccb98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get diagnostic information for core VE.  <a href="#a8bd7f02dac98fc532ae984851bcccb98">More...</a><br /></td></tr>
 <tr class="separator:a8bd7f02dac98fc532ae984851bcccb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,12 +247,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5d89add7e6827a4657a3034e9d0906d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#ae5d89add7e6827a4657a3034e9d0906d">maxHeadTrajLen</a> (self)</td></tr>
 <tr class="memdesc:ae5d89add7e6827a4657a3034e9d0906d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum number of nodes in single head trajectory.  <a href="#ae5d89add7e6827a4657a3034e9d0906d">More...</a><br /></td></tr>
 <tr class="separator:ae5d89add7e6827a4657a3034e9d0906d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ef44e414e5b9e36996ae087b26bc3de"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a0ef44e414e5b9e36996ae087b26bc3de">getJointGroup</a> (self, group_name)</td></tr>
-<tr class="memdesc:a0ef44e414e5b9e36996ae087b26bc3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get names of all joints in group.  <a href="#a0ef44e414e5b9e36996ae087b26bc3de">More...</a><br /></td></tr>
-<tr class="separator:a0ef44e414e5b9e36996ae087b26bc3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792502b42ee76dd64f10ee17992f84ac"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a792502b42ee76dd64f10ee17992f84ac">moveJointTrajAndWait</a> (self, traj, start_time=0.2, stamp=None, position_tol=5.0/180.0 *math.pi, velocity_tol=5.0/180.0 *math.pi)</td></tr>
+<tr class="memdesc:a792502b42ee76dd64f10ee17992f84ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute joint space trajectory in joint impedance mode.  <a href="#a792502b42ee76dd64f10ee17992f84ac">More...</a><br /></td></tr>
+<tr class="separator:a792502b42ee76dd64f10ee17992f84ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab877a766a5eb32b2f923c8676d157f7f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#ab877a766a5eb32b2f923c8676d157f7f">moveJointTraj</a> (self, traj, start_time=0.2, stamp=None, position_tol=5.0/180.0 *math.pi, velocity_tol=5.0/180.0 *math.pi)</td></tr>
 <tr class="memdesc:ab877a766a5eb32b2f923c8676d157f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute joint space trajectory in joint impedance mode.  <a href="#ab877a766a5eb32b2f923c8676d157f7f">More...</a><br /></td></tr>
 <tr class="separator:ab877a766a5eb32b2f923c8676d157f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75eabb2e9f77bdae0c5643309630896e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a75eabb2e9f77bdae0c5643309630896e">calculateJointTrajTime</a> (self, q_map_start, traj_in, max_vel)</td></tr>
+<tr class="separator:a75eabb2e9f77bdae0c5643309630896e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cae8fc84c5c2b1e963d0285da55e3b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a90cae8fc84c5c2b1e963d0285da55e3b">getJntImpMovementTime</a> (self, q_dest_map, max_vel)</td></tr>
+<tr class="separator:a90cae8fc84c5c2b1e963d0285da55e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc64e5ae5659450d746ba97902b7a639"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#afc64e5ae5659450d746ba97902b7a639">getJntImpMovementTime2</a> (self, q_dest_map_1, q_dest_map_2, max_vel)</td></tr>
+<tr class="separator:afc64e5ae5659450d746ba97902b7a639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92a6746f49b63064fad9d4bb42223b7f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a92a6746f49b63064fad9d4bb42223b7f">moveJoint</a> (self, q_dest_map, time, max_vel=None, start_time=0.2, stamp=None, position_tol=5.0/180.0 *math.pi, velocity_tol=5.0/180.0 *math.pi)</td></tr>
 <tr class="memdesc:a92a6746f49b63064fad9d4bb42223b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute simple joint space motion in joint impedance mode.  <a href="#a92a6746f49b63064fad9d4bb42223b7f">More...</a><br /></td></tr>
 <tr class="separator:a92a6746f49b63064fad9d4bb42223b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,15 +316,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb49101afd038362d7ca190296fab443"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#aeb49101afd038362d7ca190296fab443">sendIdentificationMeasurementCommand</a> (self, side, command_index)</td></tr>
 <tr class="memdesc:aeb49101afd038362d7ca190296fab443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make measurement for gravity compensation.  <a href="#aeb49101afd038362d7ca190296fab443">More...</a><br /></td></tr>
 <tr class="separator:aeb49101afd038362d7ca190296fab443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abbb7ac599e5ea78e98adf67e14db1b5e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#abbb7ac599e5ea78e98adf67e14db1b5e">getJointGroup</a> (group_name)</td></tr>
+<tr class="memdesc:abbb7ac599e5ea78e98adf67e14db1b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get names of all joints in group.  <a href="#abbb7ac599e5ea78e98adf67e14db1b5e">More...</a><br /></td></tr>
+<tr class="separator:abbb7ac599e5ea78e98adf67e14db1b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ROS-based, Python interface class for WUT Velma Robot. </p>
 <p>This class implements methods that use ROS topics, actions and services to communicate with velma_task_cs_ros_interface subsystem of velma_task agent. </p>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00146">146</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00185">185</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae938a6dbb8db54723832fdba02592463"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae938a6dbb8db54723832fdba02592463">&#9670;&nbsp;</a></span>__init__()</h2>
+<a id="a4559db40208dfc892693cf97fb9df872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4559db40208dfc892693cf97fb9df872">&#9670;&nbsp;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,15 +339,25 @@ Public Member Functions</h2></td></tr>
           <td class="memname">def velma_common.velma_interface.VelmaInterface.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>debug</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Initialization of the interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00631">631</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00730">730</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -356,7 +381,49 @@ Public Member Functions</h2></td></tr>
 <p>Allow self-collisions of hands. </p>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00960">960</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01075">1075</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+
+</div>
+</div>
+<a id="a75eabb2e9f77bdae0c5643309630896e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75eabb2e9f77bdae0c5643309630896e">&#9670;&nbsp;</a></span>calculateJointTrajTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def velma_common.velma_interface.VelmaInterface.calculateJointTrajTime </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>q_map_start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>traj_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>max_vel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01647">1647</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -379,7 +446,37 @@ Public Member Functions</h2></td></tr>
 <p>Cancel look at motion of head. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns True. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01385">1385</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01500">1500</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+
+</div>
+</div>
+<a id="a3558d7513c82facfe58d8d312bbdd4ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3558d7513c82facfe58d8d312bbdd4ff">&#9670;&nbsp;</a></span>dbgPrint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def velma_common.velma_interface.VelmaInterface.dbgPrint </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00725">725</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -402,7 +499,7 @@ Public Member Functions</h2></td></tr>
 <p>Disallow self-collisions of hands. </p>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00970">970</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01085">1085</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -446,7 +543,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01064">1064</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01179">1179</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -485,7 +582,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a38a48482ae1b4905b189b4ef8731e918" title="Enable motor. ">enableMotor</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01122">1122</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01237">1237</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -544,7 +641,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01767">1767</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01948">1948</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -568,7 +665,7 @@ Public Member Functions</h2></td></tr>
 <p>Joints of neck and grippers are not included. The joints are used in impedance control (both joint and cartesian).</p>
 <dl class="section return"><dt>Returns</dt><dd>dictionary: Returns a dictionary {name:(lower_limit, upper_limit)} that maps joint name to a 2-tupe with lower and upper joint limit. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00499">499</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00553">553</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -592,7 +689,7 @@ Public Member Functions</h2></td></tr>
 <p>Joints of neck and grippers are not included. The joints are used in impedance control (cart_imp mode).</p>
 <dl class="section return"><dt>Returns</dt><dd>dictionary: Returns a dictionary {name:(lower_limit, upper_limit, [lower_limit, upper_limit)])} that maps joint name to a 2-tupe or 4-tupe with lower and upper joint limit. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00510">510</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00564">564</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -665,7 +762,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01189">1189</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01304">1304</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -698,7 +795,7 @@ Public Member Functions</h2></td></tr>
 <p>Get diagnostic information for core CS. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns object of type <a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface_1_1CoreCsDiag.html" title="This class contains subsystem-specific diagnostic information for velma_core_cs. ">VelmaInterface.CoreCsDiag</a>, with diagnostic information about control subsystem. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00947">947</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01062">1062</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -731,7 +828,7 @@ Public Member Functions</h2></td></tr>
 <p>Get diagnostic information for core VE. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns object of type subsystem_common.SubsystemDiag, with diagnostic information about subsystem. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00843">843</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00958">958</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -776,7 +873,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00323">323</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00362">362</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -800,7 +897,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>tuple: An 8-tuple of positions of all joints of left hand, or None if there is no valid joint state data.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a517ca34d6792b5429b671d94d7358c80" title="Get current configuration of a specified hand. ">getHandCurrentConfiguration</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00353">353</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00392">392</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -824,7 +921,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>tuple: An 8-tuple of positions of all joints of right hand, or None if there is no valid joint state data.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a517ca34d6792b5429b671d94d7358c80" title="Get current configuration of a specified hand. ">getHandCurrentConfiguration</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00364">364</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00403">403</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -847,7 +944,7 @@ Public Member Functions</h2></td></tr>
 <p>Get current configuration of neck. </p>
 <dl class="section return"><dt>Returns</dt><dd>tuple: A 2-tuple of positions of neck joints, or None if there is no valid joint state data. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00376">376</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00415">415</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -870,18 +967,18 @@ Public Member Functions</h2></td></tr>
 <p>Gets limits of joints of neck. </p>
 <dl class="section return"><dt>Returns</dt><dd>dictionary: Returns a dictionary {name:(lower_limit, upper_limit)} that maps joint name to a 2-tupe with lower and upper joint limit. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00521">521</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00575">575</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
-<a id="a0ef44e414e5b9e36996ae087b26bc3de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ef44e414e5b9e36996ae087b26bc3de">&#9670;&nbsp;</a></span>getJointGroup()</h2>
+<a id="a90cae8fc84c5c2b1e963d0285da55e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90cae8fc84c5c2b1e963d0285da55e3b">&#9670;&nbsp;</a></span>getJntImpMovementTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def velma_common.velma_interface.VelmaInterface.getJointGroup </td>
+          <td class="memname">def velma_common.velma_interface.VelmaInterface.getJntImpMovementTime </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -890,7 +987,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>group_name</em>&#160;</td>
+          <td class="paramname"><em>q_dest_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>max_vel</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -898,6 +1001,76 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01673">1673</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+
+</div>
+</div>
+<a id="afc64e5ae5659450d746ba97902b7a639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc64e5ae5659450d746ba97902b7a639">&#9670;&nbsp;</a></span>getJntImpMovementTime2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def velma_common.velma_interface.VelmaInterface.getJntImpMovementTime2 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>q_dest_map_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>q_dest_map_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>max_vel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01677">1677</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+
+</div>
+</div>
+<a id="abbb7ac599e5ea78e98adf67e14db1b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb7ac599e5ea78e98adf67e14db1b5e">&#9670;&nbsp;</a></span>getJointGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">def velma_common.velma_interface.VelmaInterface.getJointGroup </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>group_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get names of all joints in group. </p>
@@ -909,7 +1082,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns list of names of joints in group. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01444">1444</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01560">1560</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -948,7 +1121,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>dictionary: A dictionary (with key=joint_name, value=joint_position) of interpolated joint positions or None, if time is not within current joint state history. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00282">282</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00321">321</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -971,7 +1144,7 @@ Public Member Functions</h2></td></tr>
 <p>Get the newest joint state. </p>
 <dl class="section return"><dt>Returns</dt><dd>(rospy.Time, dictionary): A Pair of timestamp of the newest joint state and dictionary (with key=joint_name, value=joint_position), or None if there is no joint state data yet. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00269">269</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00308">308</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -994,7 +1167,7 @@ Public Member Functions</h2></td></tr>
 <p>Get Polygon that defines wrist collision constraints for joints 5 and 6 of the left arm. </p>
 <dl class="section return"><dt>Returns</dt><dd>list: Returns wrist collision constraint polygon as [x0, y0, x1, y1, x2, y2, ...]. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01028">1028</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01143">1143</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1190,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets left F/T sensor raw reading. </p>
 <dl class="section return"><dt>Returns</dt><dd>PyKDL.Wrench: Returns KDL wrench. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00988">988</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01103">1103</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1040,7 +1213,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets right F/T sensor raw reading. </p>
 <dl class="section return"><dt>Returns</dt><dd>PyKDL.Wrench: Returns KDL wrench. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00980">980</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01095">1095</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1236,7 @@ Public Member Functions</h2></td></tr>
 <p>Get Polygon that defines wrist collision constraints for joints 5 and 6 of the right arm. </p>
 <dl class="section return"><dt>Returns</dt><dd>list: Returns wrist collision constraint polygon as [x0, y0, x1, y1, x2, y2, ...]. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01036">1036</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01151">1151</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1332,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01789">1789</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01970">1970</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1182,7 +1355,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets left F/T sensor transformed reading. </p>
 <dl class="section return"><dt>Returns</dt><dd>PyKDL.Wrench: Returns KDL wrench. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01004">1004</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01119">1119</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1205,7 +1378,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets right F/T sensor transformed reading. </p>
 <dl class="section return"><dt>Returns</dt><dd>PyKDL.Wrench: Returns KDL wrench. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00996">996</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01111">1111</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1401,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets estimated wrench for the left end effector. </p>
 <dl class="section return"><dt>Returns</dt><dd>PyKDL.Wrench: Returns KDL wrench. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01020">1020</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01135">1135</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1251,7 +1424,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets estimated wrench for the right end effector. </p>
 <dl class="section return"><dt>Returns</dt><dd>PyKDL.Wrench: Returns KDL wrench. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01012">1012</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01127">1127</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1274,7 +1447,7 @@ Public Member Functions</h2></td></tr>
 <p>Check if look at action is connected. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if look at action is connected, False otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01395">1395</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01510">1510</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1313,7 +1486,7 @@ Public Member Functions</h2></td></tr>
 <p>Execute look at motion of head. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns True </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01368">1368</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01483">1483</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1336,7 +1509,7 @@ Public Member Functions</h2></td></tr>
 <p>Get maximum number of nodes in single head trajectory. </p>
 <dl class="section return"><dt>Returns</dt><dd>Maximum number of nodes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01437">1437</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01552">1552</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1359,7 +1532,7 @@ Public Member Functions</h2></td></tr>
 <p>Get maximum number of nodes in single joint trajectory. </p>
 <dl class="section return"><dt>Returns</dt><dd>Maximum number of nodes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01430">1430</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01545">1545</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1481,7 +1654,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01219">1219</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01334">1334</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1699,7 @@ Public Member Functions</h2></td></tr>
 <p>Move right end-effector to current position. </p>
 <p>Switch core_cs to cart_imp mode. </p><dl class="section return"><dt>Returns</dt><dd>Returns True. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01301">1301</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01416">1416</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1619,7 +1792,7 @@ Public Member Functions</h2></td></tr>
 <p>Execute motion in cartesian impedance mode for the left end-effector. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a0ac6b85a6384b54b33d58d39bca1862f" title="Execute motion in cartesian impedance mode. ">moveCartImp</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01294">1294</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01409">1409</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1658,7 +1831,7 @@ Public Member Functions</h2></td></tr>
 <p>Move left end-effector to current position. </p>
 <p>Switch core_cs to cart_imp mode. </p><dl class="section return"><dt>Returns</dt><dd>Returns True. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01315">1315</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01430">1430</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1751,7 +1924,7 @@ Public Member Functions</h2></td></tr>
 <p>Execute motion in cartesian impedance mode for the right end-effector. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a0ac6b85a6384b54b33d58d39bca1862f" title="Execute motion in cartesian impedance mode. ">moveCartImp</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01287">1287</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01402">1402</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1790,7 +1963,7 @@ Public Member Functions</h2></td></tr>
 <p>Move right end-effector to current position. </p>
 <p>Switch core_cs to cart_imp mode. </p><dl class="section return"><dt>Returns</dt><dd>Returns True. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01308">1308</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01423">1423</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1869,7 +2042,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01649">1649</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01830">1830</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1926,7 +2099,7 @@ Public Member Functions</h2></td></tr>
 <p>Executes motion with trapezoidal velocity profile for left hand. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a285542b2f17fd03bfebded24855e82c1" title="Executes hand motion with trapezoidal velocity profile. ">moveHand</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01674">1674</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01855">1855</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -1983,7 +2156,7 @@ Public Member Functions</h2></td></tr>
 <p>Executes motion with trapezoidal velocity profile for right hand. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a285542b2f17fd03bfebded24855e82c1" title="Executes hand motion with trapezoidal velocity profile. ">moveHand</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01681">1681</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01862">1862</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2066,7 +2239,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01604">1604</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01785">1785</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2137,7 +2310,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01557">1557</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01738">1738</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2214,7 +2387,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns True. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01505">1505</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01686">1686</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2253,7 +2426,7 @@ Public Member Functions</h2></td></tr>
 <p>Switch core_cs to jnt_imp mode. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns True. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01529">1529</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01710">1710</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2308,7 +2481,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Execute joint space trajectory in joint impedance mode. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Trajectories of length up to 50 nodes are allowed. This method does not block the executing thread. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">traj</td><td>trajectory_msgs.msg.JointTrajectory: joint trajectory. </td></tr>
     <tr><td class="paramname">start_time</td><td>float: relative start time. </td></tr>
@@ -2324,7 +2497,72 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01452">1452</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01601">1601</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+
+</div>
+</div>
+<a id="a792502b42ee76dd64f10ee17992f84ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a792502b42ee76dd64f10ee17992f84ac">&#9670;&nbsp;</a></span>moveJointTrajAndWait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def velma_common.velma_interface.VelmaInterface.moveJointTrajAndWait </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>traj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>start_time</em> = <code>0.2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>stamp</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>position_tol</em> = <code>5.0/180.0&#160;*&#160;math.pi</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>velocity_tol</em> = <code>5.0/180.0*math.pi</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute joint space trajectory in joint impedance mode. </p>
+<p>Trajectories of any length are allowed. This method blocks the executing thread until trajectory is completed, or error occures. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">traj</td><td>trajectory_msgs.msg.JointTrajectory: joint trajectory. </td></tr>
+    <tr><td class="paramname">start_time</td><td>float: relative start time. </td></tr>
+    <tr><td class="paramname">stamp</td><td>rospy.Time: absolute start time.  float: position tolerance.  float: velocity tolerance. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns True. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01568">1568</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2368,7 +2606,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01688">1688</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01869">1869</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2391,7 +2629,7 @@ Public Member Functions</h2></td></tr>
 <p>Executes reset command for left hand. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a7db99773f1d546918adea606f65b63c6" title="Executes reset command for hand. ">resetHand</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01699">1699</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01880">1880</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2414,7 +2652,7 @@ Public Member Functions</h2></td></tr>
 <p>Executes reset command for right hand. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a7db99773f1d546918adea606f65b63c6" title="Executes reset command for hand. ">resetHand</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01706">1706</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01887">1887</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2466,7 +2704,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01873">1873</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l02054">2054</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2517,7 +2755,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01844">1844</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l02025">2025</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2540,7 +2778,7 @@ Public Member Functions</h2></td></tr>
 <p>Start homing procedure for head pan motor. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#afd94885de41867e4953a731caa0d11b3" title="Start homing procedure for specified motor. ">startHomingMotor</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01142">1142</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01257">1257</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2563,7 +2801,7 @@ Public Member Functions</h2></td></tr>
 <p>Start homing procedure for head tilt motor. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#afd94885de41867e4953a731caa0d11b3" title="Start homing procedure for specified motor. ">startHomingMotor</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01150">1150</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01265">1265</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2607,7 +2845,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01078">1078</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01193">1193</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2629,7 +2867,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Switches the robot to relax behavior. </p>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01056">1056</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01171">1171</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2681,7 +2919,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01322">1322</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01437">1437</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2720,7 +2958,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns error code. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01350">1350</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01465">1465</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2759,7 +2997,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns error code. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01358">1358</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01473">1473</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2809,7 +3047,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01713">1713</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01894">1894</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2832,7 +3070,7 @@ Public Member Functions</h2></td></tr>
 <p>Wait for completion of left hand movement. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a1d923b070f3c2a5528aa308371326fd2" title="Wait for completion of hand movement. ">waitForHand</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01732">1732</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01913">1913</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2855,7 +3093,7 @@ Public Member Functions</h2></td></tr>
 <p>Wait for completion of right hand movement. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#a1d923b070f3c2a5528aa308371326fd2" title="Wait for completion of hand movement. ">waitForHand</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01739">1739</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01920">1920</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2888,7 +3126,7 @@ Public Member Functions</h2></td></tr>
 <p>Wait for head movement to complete. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns error code. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01631">1631</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01812">1812</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2927,7 +3165,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#ae8d3b6221dfe969dff4ccb31a56b7fc5" title="Wait for an action for a motor to complete. ">waitForMotor</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01159">1159</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01274">1274</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -2966,7 +3204,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#ae8d3b6221dfe969dff4ccb31a56b7fc5" title="Wait for an action for a motor to complete. ">waitForMotor</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01169">1169</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01284">1284</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -3005,7 +3243,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the interface was succesfully initialized within timeout, False otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00431">431</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00474">474</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -3038,7 +3276,7 @@ Public Member Functions</h2></td></tr>
 <p>Wait for joint space movement to complete. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns error code. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01537">1537</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01718">1718</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -3077,7 +3315,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns True. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00484">484</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l00538">538</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -3116,7 +3354,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns error code. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01404">1404</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01519">1519</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -3168,7 +3406,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01092">1092</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01207">1207</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>
@@ -3207,7 +3445,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvelma__common_1_1velma__interface_1_1VelmaInterface.html#ae8d3b6221dfe969dff4ccb31a56b7fc5" title="Wait for an action for a motor to complete. ">waitForMotor</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01179">1179</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="velma__interface_8py_source.html#l01294">1294</a> of file <a class="el" href="velma__interface_8py_source.html">velma_interface.py</a>.</p>
 
 </div>
 </div>

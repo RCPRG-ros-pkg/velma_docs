@@ -14,7 +14,9 @@ var searchData=
   ['test_5fjimp_5fendless_2epy',['test_jimp_endless.py',['../test__jimp__endless_8py.html',1,'']]],
   ['test_5fjimp_5fplanning_2epy',['test_jimp_planning.py',['../test__jimp__planning_8py.html',1,'']]],
   ['test_5fjimp_5fplanning_5fattached_2epy',['test_jimp_planning_attached.py',['../test__jimp__planning__attached_8py.html',1,'']]],
+  ['test_5flwr_5fworkspace_2epy',['test_lwr_workspace.py',['../test__lwr__workspace_8py.html',1,'']]],
   ['test_5frelax_2epy',['test_relax.py',['../test__relax_8py.html',1,'']]],
   ['test_5fvelma_5fik_5fgeom_2epy',['test_velma_ik_geom.py',['../test__velma__ik__geom_8py.html',1,'']]],
+  ['test_5fvelma_5fworkspace_2epy',['test_velma_workspace.py',['../test__velma__workspace_8py.html',1,'']]],
   ['topic_5finfo_2epy',['topic_info.py',['../topic__info_8py.html',1,'']]]
 ];
