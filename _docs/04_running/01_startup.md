@@ -44,7 +44,7 @@ rosrun velma_common reset_shm_comm.py
 **Description**
 
 This script removes all shared memory files, in `/dev/shm/` directory, related to control system of Velma.
-This cleanup is needed before every start-up of the system.
+This cleanup is needed when the communication channels are blocked. This problem may sometimes occur.
 
 
 
