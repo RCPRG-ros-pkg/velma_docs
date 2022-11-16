@@ -30,11 +30,9 @@ The full stack of workspaces is (each workspace extends the previous one):
 
 ## Installation from package
 
-Packages (.deb) are available at:
+Packages (.deb) are available at [.deb packages](https://cloud.robotyka.ia.pw.edu.pl/index.php/s/8H6CCC2Jac7sBE8).
 
-https://cloud.robotyka.ia.pw.edu.pl/index.php/s/8H6CCC2Jac7sBE8
-
-To install the package, you have to install ros-melodic-desktop first (not ros-melodic-desktop-full). Please refer to ROS installation instructions: http://wiki.ros.org/melodic/Installation/Ubuntu
+To install the package, you have to install ros-melodic-desktop first (not ros-melodic-desktop-full). Please refer to [ROS installation instructions](http://wiki.ros.org/melodic/Installation/Ubuntu).
 
 Update you system:
 ```bash
